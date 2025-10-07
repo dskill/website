@@ -23,9 +23,20 @@
           <span class="tagline">{{ site.tagline }}</span>
         </div>
         <nav class="site-nav" aria-label="Primary">
+          {% assign current = page.url %}
           <ul>
-            <li><a href="{{ '/' | relative_url }}" class="active">Experiences</a></li>
-            <li><a href="https://blog.drewskillman.com/devlog" target="_blank" rel="noreferrer">Dev Log</a></li>
+            <li>
+              <a
+                href="{{ '/' | relative_url }}"
+                class="{% if current == '/' or current contains '/experiences/' %}active{% endif %}"
+              >Experiences</a>
+            </li>
+            <li>
+              <a
+                href="{{ '/devlog/' | relative_url }}"
+                class="{% if current contains '/devlog/' %}active{% endif %}"
+              >Dev Log</a>
+            </li>
             <li><a href="https://blog.drewskillman.com/talks" target="_blank" rel="noreferrer">Talks</a></li>
             <li><a href="https://blog.drewskillman.com/about" target="_blank" rel="noreferrer">About</a></li>
           </ul>

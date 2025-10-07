@@ -10,6 +10,9 @@ collections:
   experiences:
     output: true
     permalink: /experiences/:name/
+  devlog:
+    output: true
+    permalink: /devlog/:name/
 
 defaults:
   - scope:
@@ -17,6 +20,11 @@ defaults:
       type: experiences
     values:
       layout: experience
+  - scope:
+      path: ""
+      type: devlog
+    values:
+      layout: devlog
 
 url: "https://dskill.github.io"
 baseurl: "/website"
