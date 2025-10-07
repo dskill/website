@@ -7,9 +7,9 @@
   image: "assets/images/audio_reactive.gif"
   external: false
 - title: "MoveNet Fluids"
-  href: "https://blog.drewskillman.com/experiences/work-movenet-fluid-experiment-hs2dw"
+  href: "/experiences/movenet-fluids/"
   image: "assets/images/Jul-30-2021+11-47-16.gif"
-  external: true
+  external: false
 - title: "Skillman & Hackett Prototypes"
   href: "https://blog.drewskillman.com/experiences/skillman-hackett-prototypes-7rjfj"
   image: "assets/images/SandHlogoanimated.gif"
