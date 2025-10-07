@@ -11,9 +11,9 @@
   image: "assets/images/Jul-30-2021+11-47-16.gif"
   external: false
 - title: "Skillman & Hackett Prototypes"
-  href: "https://blog.drewskillman.com/experiences/skillman-hackett-prototypes-7rjfj"
+  href: "/experiences/skillman-hackett-prototypes/"
   image: "assets/images/SandHlogoanimated.gif"
-  external: true
+  external: false
 - title: "Dropchord"
   href: "https://blog.drewskillman.com/experiences/dropchord-kn7cx"
   image: "assets/images/dropchord.gif"

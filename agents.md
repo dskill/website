@@ -31,5 +31,31 @@
 - Project site deploys at `/website`; Jekyll baseurl is set to `/website`, so run `bundle exec jekyll serve --livereload --baseurl ""` for root-local testing.
 - When recreating experience pages, capture all source media locally and keep the copy identical to the original page text (no paraphrasing).
 
+# Squarespace Scraping Workflow
+- Create/update a Python virtualenv (`python3 -m venv .venv && source .venv/bin/activate`) and install Playwright (`pip install playwright && playwright install chromium`).  
+- Mirror the legacy site as needed with `wget --continue --mirror --convert-links --adjust-extension --page-requisites --span-hosts --no-parent --restrict-file-names=ascii --content-disposition --domains=blog.drewskillman.com,images.squarespace-cdn.com,static1.squarespace.com,assets.squarespace.com --directory-prefix=reference/mirror https://blog.drewskillman.com/`.  
+- Use Playwright scripts to fetch rendered HTML or inspect DOM content when Squarespace hides data behind JS. Example:
+  ```python
+  import asyncio
+  from pathlib import Path
+  from playwright.async_api import async_playwright
+  
+  async def grab(url, outfile):
+      async with async_playwright() as p:
+          browser = await p.chromium.launch()
+          page = await browser.new_page()
+          await page.goto(url, wait_until="networkidle")
+          await page.wait_for_timeout(2000)
+          Path(outfile).write_text(await page.content())
+          await browser.close()
+  
+  asyncio.run(grab(
+      "https://blog.drewskillman.com/experiences/skillman-hackett-prototypes-7rjfj",
+      "reference/skillman-hackett-playwright.html",
+  ))
+  ```
+- Extract copy/assets from the saved HTML or from Squarespace JSON endpoints (`?format=json` and filter for `referencePageSectionsId`).  
+- Copy required media into `assets/images/<slug>/` before wiring up the new `_experiences` entry.
+
 # Next Task
 - Migrate the "Skillman & Hackett Prototypes" Squarespace entry into `_experiences/` with identical copy, local assets, and any embedded media so the homepage card can link internally.

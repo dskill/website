@@ -3,3 +3,6 @@ _site/
 .jekyll-cache/
 Gemfile.lock
 .bundle/
+.DS_Store
+.venv/
+reference/mirror/
