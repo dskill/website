@@ -6,11 +6,15 @@ title: "Experiences"
 <section class="portfolio-section">
   <div class="portfolio-grid">
     {%- for project in site.data.portfolio -%}
+    {% assign is_external = project.external %}
+    {% assign project_url = project.href %}
+    {% unless is_external %}
+      {% assign project_url = project.href | relative_url %}
+    {% endunless %}
     <a
       class="portfolio-card"
-      href="{{ project.href }}"
-      target="_blank"
-      rel="noreferrer"
+      href="{{ project_url }}"
+      {% if is_external %}target="_blank" rel="noreferrer"{% endif %}
       aria-label="{{ project.title }}"
     >
       <img
@@ -19,7 +23,7 @@ title: "Experiences"
         loading="lazy"
       />
       <span class="portfolio-title">{{ project.title }}</span>
-      <span class="arrow" aria-hidden="true">↗</span>
+      <span class="arrow" aria-hidden="true">{% if is_external %}↗{% else %}→{% endif %}</span>
     </a>
     {%- endfor -%}
   </div>

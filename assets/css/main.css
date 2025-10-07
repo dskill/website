@@ -227,9 +227,150 @@ a:focus {
   }
 }
 
+
+.experience-page {
+  width: min(820px, calc(100% - 3rem));
+  margin: 0 auto;
+  padding: clamp(3rem, 8vw, 4.5rem) 0 clamp(4rem, 10vw, 6rem);
+  display: grid;
+  gap: clamp(2.5rem, 7vw, 3.5rem);
+}
+
+.experience-video {
+  position: relative;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3);
+}
+
+.experience-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #000;
+}
+
+.experience-cover {
+  margin: 0;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3);
+}
+
+.experience-cover img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.experience-header {
+  display: grid;
+  gap: 1.25rem;
+  text-align: left;
+  justify-items: start;
+}
+
+.experience-header h1 {
+  margin: 0;
+  font-size: clamp(2.1rem, 6vw, 3rem);
+  letter-spacing: -0.015em;
+}
+
+.experience-summary {
+  color: var(--muted);
+  line-height: 1.8;
+  margin: 0;
+  max-width: 42ch;
+}
+
+.experience-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: flex-start;
+}
+
+.pill-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  font-size: 0.78rem;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.pill-link:hover,
+.pill-link:focus {
+  background: var(--accent);
+  color: #062029;
+}
+
+
+.experience-body {
+  display: grid;
+  gap: 1.75rem;
+  line-height: 1.8;
+  color: var(--muted);
+  text-align: left;
+}
+
+
+.experience-body h2,
+.experience-body h3 {
+  color: var(--text);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.01em;
+}
+
+.experience-body p {
+  margin: 0;
+}
+
+.experience-body a {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.experience-body a:hover,
+.experience-body a:focus {
+  color: #22d3ee;
+}
+
+.experience-gallery {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.experience-gallery-item {
+  margin: 0;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: 0 18px 30px rgba(0, 0, 0, 0.25);
+}
+
+.experience-gallery-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 @media (min-width: 960px) {
   .portfolio-grid {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .experience-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }

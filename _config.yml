@@ -6,5 +6,17 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+collections:
+  experiences:
+    output: true
+    permalink: /experiences/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: experiences
+    values:
+      layout: experience
+
 url: "" # Set this to your production URL after publishing.
 baseurl: "" # Leave blank when deploying to the root.
