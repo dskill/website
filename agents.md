@@ -24,4 +24,5 @@
 - GitHub Pages supports only whitelisted plugins; stick to `jekyll-feed`, `jekyll-seo-tag`, and other approved gems unless deploying via GitHub Actions.  
 - Maintain ASCII filenames; spaces in image names came from Squarespace—rename if automating pipelines later.  
 - Large GIFs may impact load time; consider MP4/WebM alternatives if performance becomes an issue.
+- Project site deploys at `/website`; Jekyll baseurl is set to `/website`, so run `bundle exec jekyll serve --livereload --baseurl ""` for root-local testing.
 - When recreating experience pages, capture all source media locally and keep the copy identical to the original page text (no paraphrasing).

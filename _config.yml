@@ -18,5 +18,5 @@ defaults:
     values:
       layout: experience
 
-url: "" # Set this to your production URL after publishing.
-baseurl: "" # Leave blank when deploying to the root.
+url: "https://dskill.github.io"
+baseurl: "/website"
