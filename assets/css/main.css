@@ -305,36 +305,8 @@ a:focus {
   max-width: 42ch;
 }
 
-.experience-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  justify-content: flex-start;
-}
 
-.pill-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  padding: 0.6rem 1rem;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.08);
-  color: var(--text);
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  text-transform: none;
-  font-size: 0.78rem;
-  transition: background 0.2s ease, color 0.2s ease;
-}
-
-.pill-link:hover,
-.pill-link:focus {
-  background: var(--accent);
-  color: #062029;
-}
-
-
-.experience-body {
+.experience-content {
   display: grid;
   gap: 1.75rem;
   line-height: 1.8;
@@ -342,25 +314,37 @@ a:focus {
   text-align: left;
 }
 
-
-.experience-body h2,
-.experience-body h3 {
+.experience-content h2,
+.experience-content h3 {
   color: var(--text);
   margin-bottom: 0.5rem;
   letter-spacing: -0.01em;
 }
 
-.experience-body p {
+.experience-content p {
   margin: 0;
 }
 
-.experience-body a {
+.experience-content img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: 0 18px 30px rgba(0, 0, 0, 0.25);
+  margin: 1.5rem 0;
+}
+
+.experience-content img + img {
+  margin-top: -0.5rem;
+}
+
+.experience-content a {
   color: var(--accent);
   text-decoration: underline;
 }
 
-.experience-body a:hover,
-.experience-body a:focus {
+.experience-content a:hover,
+.experience-content a:focus {
   color: #22d3ee;
 }
 

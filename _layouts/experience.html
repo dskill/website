@@ -8,72 +8,9 @@ layout: default
     {% if page.summary %}
     <p class="experience-summary">{{ page.summary }}</p>
     {% endif %}
-
-    {% if page.links %}
-    <div class="experience-links">
-      {% for link in page.links %}
-      <a class="pill-link" href="{{ link.url }}" target="_blank" rel="noreferrer">
-        {{ link.label }}
-      </a>
-      {% endfor %}
-    </div>
-    {% endif %}
   </header>
 
-  {% if page.embed_url %}
-  <div class="experience-embed">
-    <div class="embed-frame">
-      <iframe
-        src="{{ page.embed_url | replace: 'watch?v=', 'embed/' }}"
-        title="{{ page.title }} video"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-    </div>
-  </div>
-  {% endif %}
-
-  {% if page.video %}
-  <div class="experience-video">
-    <video
-      src="{{ page.video | relative_url }}"
-      controls
-      playsinline
-      preload="metadata"
-      poster="{{ page.cover_image | relative_url }}"
-    ></video>
-  </div>
-  {% endif %}
-
-  {% if page.cover_image %}
-  <figure class="experience-cover">
-    <img
-      src="{{ page.cover_image | relative_url }}"
-      alt="{{ page.title }} cover"
-      loading="lazy"
-    />
-  </figure>
-  {% endif %}
-
-  <section class="experience-body">
+  <section class="experience-content">
     {{ content }}
   </section>
-
-  {% if page.gallery %}
-  <section class="experience-gallery">
-    {% for item in page.gallery %}
-      {% if item.image %}
-        {% assign gallery_image = item.image %}
-        {% assign gallery_alt = item.alt | default: '' %}
-      {% else %}
-        {% assign gallery_image = item %}
-        {% assign gallery_alt = '' %}
-      {% endif %}
-      <figure class="experience-gallery-item">
-        <img src="{{ gallery_image | relative_url }}" alt="{{ gallery_alt }}" loading="lazy" />
-      </figure>
-    {% endfor %}
-  </section>
-  {% endif %}
 </article>
