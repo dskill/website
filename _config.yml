@@ -1,0 +1,9 @@
+title: "My GitHub Pages Site"
+description: "Placeholder site to verify GitHub Pages pipeline."
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+url: "" # Set this to your production URL after publishing.
+baseurl: "" # Leave blank when deploying to the root.
