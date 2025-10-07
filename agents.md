@@ -54,7 +54,8 @@
       "reference/skillman-hackett-playwright.html",
   ))
   ```
-- Extract copy/assets from the saved HTML or from Squarespace JSON endpoints (`?format=json` and filter for `referencePageSectionsId`).  
+- Capture each Squarespace page by saving the rendered HTML as `reference/<slug>-playwright.html`, then parse that file with BeautifulSoup to pull text blocks and locate media URLs before wiring up `_experiences/<slug>.md`.
+- When downloading media, prefer the `static1.squarespace.com` URLs if the `images.squarespace-cdn.com` version 404s; both domains host the same asset but older uploads often live on `static1`.
 - Copy required media into `assets/images/<slug>/` before wiring up the new `_experiences` entry.
 
 # Next Task

@@ -19,13 +19,13 @@
   image: "assets/images/dropchord.gif"
   external: false
 - title: "My Alien Buddy"
-  href: "https://blog.drewskillman.com/experiences/my-alien-buddy-4rm2y"
+  href: "/experiences/my-alien-buddy/"
   image: "assets/images/my_alien_buddy.gif"
-  external: true
+  external: false
 - title: "Playground"
-  href: "https://blog.drewskillman.com/experiences/playground-24rfj"
+  href: "/experiences/playground/"
   image: "assets/images/How-to-Get-Playground-2.0-Playmoji-on-Older-Pixel-Devices.jpg"
-  external: true
+  external: false
 - title: "Kinect Party (AKA Iron Brigade)"
   href: "https://blog.drewskillman.com/experiences/kinect-party-happy-action-theater-al5tk"
   image: "assets/images/ez6_1.gif"
