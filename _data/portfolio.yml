@@ -3,9 +3,9 @@
   image: "assets/images/iphone.gif"
   external: false
 - title: "Tilt Brush"
-  href: "https://blog.drewskillman.com/experiences/tilt-brush-86xdr"
+  href: "/experiences/tilt-brush/"
   image: "assets/images/audio_reactive.gif"
-  external: true
+  external: false
 - title: "MoveNet Fluids"
   href: "https://blog.drewskillman.com/experiences/work-movenet-fluid-experiment-hs2dw"
   image: "assets/images/Jul-30-2021+11-47-16.gif"

@@ -3,6 +3,7 @@ title: "Slimeball!"
 cover_image: "/assets/images/slimeball/Slimeball_CoverLandscape_2560x1440.png"
 video: "/assets/videos/slimeball-trailer.mp4"
 gallery:
+  - "/assets/images/iphone.gif"
   - "/assets/images/slimeball/SlimeballScreenshots_001.png"
   - "/assets/images/slimeball/SlimeballScreenshots_002.png"
   - "/assets/images/slimeball/SlimeballScreenshots_003.png"

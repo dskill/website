@@ -20,6 +20,20 @@ layout: default
     {% endif %}
   </header>
 
+  {% if page.embed_url %}
+  <div class="experience-embed">
+    <div class="embed-frame">
+      <iframe
+        src="{{ page.embed_url | replace: 'watch?v=', 'embed/' }}"
+        title="{{ page.title }} video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+  {% endif %}
+
   {% if page.video %}
   <div class="experience-video">
     <video

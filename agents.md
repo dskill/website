@@ -9,6 +9,7 @@
 - Downloaded key project imagery from the legacy site and referenced locally.  
 - Navigation currently links out to legacy Squarespace sections for pages that do not exist yet.
 - Introduced an `_experiences` collection with a new layout and migrated the Slimeball! entry as the first test page.
+- Added a Tilt Brush experience entry with identical copy, local assets, and an embedded YouTube trailer.
 
 # Next Steps
 1. **Collections**: migrate the remaining Experiences into `_experiences/` entries (repeat the Slimeball! structure) and, if needed, introduce `_devlog/` and `_talks/` collections. Update the homepage grid to read from the collection once content coverage is complete.  
