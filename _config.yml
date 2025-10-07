@@ -1,6 +1,7 @@
-title: "My GitHub Pages Site"
-description: "Placeholder site to verify GitHub Pages pipeline."
-theme: minima
+title: "Drew Skillman"
+tagline: "PLAYABLE REALITIES"
+description: "Recreation of the Drew Skillman portfolio homepage."
+theme: null
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
