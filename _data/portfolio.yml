@@ -15,9 +15,9 @@
   image: "assets/images/SandHlogoanimated.gif"
   external: false
 - title: "Dropchord"
-  href: "https://blog.drewskillman.com/experiences/dropchord-kn7cx"
+  href: "/experiences/dropchord/"
   image: "assets/images/dropchord.gif"
-  external: true
+  external: false
 - title: "My Alien Buddy"
   href: "https://blog.drewskillman.com/experiences/my-alien-buddy-4rm2y"
   image: "assets/images/my_alien_buddy.gif"
