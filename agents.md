@@ -32,31 +32,17 @@
 - When recreating experience pages, capture all source media locally and keep the copy identical to the original page text (no paraphrasing).
 
 # Squarespace Scraping Workflow
-- Create/update a Python virtualenv (`python3 -m venv .venv && source .venv/bin/activate`) and install Playwright (`pip install playwright && playwright install chromium`).  
-- Mirror the legacy site as needed with `wget --continue --mirror --convert-links --adjust-extension --page-requisites --span-hosts --no-parent --restrict-file-names=ascii --content-disposition --domains=blog.drewskillman.com,images.squarespace-cdn.com,static1.squarespace.com,assets.squarespace.com --directory-prefix=reference/mirror https://blog.drewskillman.com/`.  
-- Use Playwright scripts to fetch rendered HTML or inspect DOM content when Squarespace hides data behind JS. Example:
-  ```python
-  import asyncio
-  from pathlib import Path
-  from playwright.async_api import async_playwright
-  
-  async def grab(url, outfile):
-      async with async_playwright() as p:
-          browser = await p.chromium.launch()
-          page = await browser.new_page()
-          await page.goto(url, wait_until="networkidle")
-          await page.wait_for_timeout(2000)
-          Path(outfile).write_text(await page.content())
-          await browser.close()
-  
-  asyncio.run(grab(
-      "https://blog.drewskillman.com/experiences/skillman-hackett-prototypes-7rjfj",
-      "reference/skillman-hackett-playwright.html",
-  ))
-  ```
-- Capture each Squarespace page by saving the rendered HTML as `reference/<slug>-playwright.html`, then parse that file with BeautifulSoup to pull text blocks and locate media URLs before wiring up `_experiences/<slug>.md`.
-- When downloading media, prefer the `static1.squarespace.com` URLs if the `images.squarespace-cdn.com` version 404s; both domains host the same asset but older uploads often live on `static1`.
-- Copy required media into `assets/images/<slug>/` before wiring up the new `_experiences` entry.
+- Fetch metadata with curl: `curl -sS "https://blog.drewskillman.com/experiences/<slug>?format=json-pretty" -o reference/<slug>.json`. The response reliably includes titles, asset IDs, and pagination, but note that Squarespace leaves `item.body` empty for these legacy portfolio entries.
+- Grab the rendered HTML directly: `curl -sS "https://blog.drewskillman.com/experiences/<slug>" -o reference/<slug>.html`. This returns the full page markup without needing Playwright and has been the most dependable source for copy and gallery blocks.
+- Parse the saved HTML (manually or with a quick script) to extract text blocks and image URLs. All content we have migrated so far came from this HTML snapshot.
+- Download media from the CDN using the `images.squarespace-cdn.com` URL captured in the HTML. If a request 404s, retry with the matching `static1.squarespace.com` path; both domains host the same assets.
+- Store downloaded files under `assets/images/<slug>/` (or alongside other shared assets) before creating the `_experiences/<slug>.md` entry.
+- Only fall back to Playwright if a page depends on client-side rendering (none of the current Experiences do). If you need it, reactivate the virtualenv in `.venv`, reinstall browsers with `playwright install`, and reuse the script in `reference/` as a last resort.
+
+# Progress Tracker
+- **Experiences migrated (`_experiences/`):** `slimeball`, `tilt-brush`, `movenet-fluids`, `skillman-hackett-prototypes`, `dropchord`, `my-alien-buddy`, `playground`, `kinect-party`. Homepage cards for these now point to internal pages.
+- **Experiences still external:** `brutal-legend`, `stacking`, `trenched` (AKA Iron Brigade), `avfx-1-wip`. They remain linked out in `_data/portfolio.yml` and need local copies plus assets.
+- **Interior pages outstanding:** `about`, collection landing pages for experiences/devlog/talks, individual dev log posts, and talks archive entries. Mirror the Squarespace content once the experience set is complete.
 
 # Next Task
 - Migrate the "Skillman & Hackett Prototypes" Squarespace entry into `_experiences/` with identical copy, local assets, and any embedded media so the homepage card can link internally.
