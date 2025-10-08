@@ -1,14 +1,13 @@
 ---
-title: "AVFX-1 (work in progress doc)"
+title: "Doctor Rock"
 ---
 
-AVFX-1 (work in progress doc)
-audio visual effect processor
+Doctor Rock is an audio visual effect processor and the evolution of the AVFX-1 project.
 
 <div class="experience-video">
   <iframe
     src="https://www.youtube.com/embed/DUmbHycygms"
-    title="AVFX-1 demo"
+    title="Doctor Rock demo"
     allow="autoplay; fullscreen; picture-in-picture"
     allowfullscreen
     loading="lazy"
@@ -17,7 +16,7 @@ audio visual effect processor
 
 What is this?
 
-The AVFX-1 is a hobby project that explores audio visual effects for real time music. Audio effects can be just about anything you can dream up, and are tightly coupled to visual effects which can also be just about anything. The audio effect can influence the visuals, and/or the visuals can influence the audio effect.
+Doctor Rock is a hobby project that explores audio visual effects for real time music. Audio effects can be just about anything you can dream up, and are tightly coupled to visual effects which can also be just about anything. The audio effect can influence the visuals, and/or the visuals can influence the audio effect.
 
 This project has been a lot of fun to work on, and is the 3rd iteration building on some prior experiments see [prior work and special thanks] sections.
 

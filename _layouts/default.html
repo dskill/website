@@ -43,7 +43,12 @@
                 class="{% if current contains '/talks/' %}active{% endif %}"
               >Talks</a>
             </li>
-            <li><a href="https://blog.drewskillman.com/about" target="_blank" rel="noreferrer">About</a></li>
+            <li>
+              <a
+                href="{{ '/about/' | relative_url }}"
+                class="{% if current contains '/about/' %}active{% endif %}"
+              >About</a>
+            </li>
           </ul>
         </nav>
       </div>
