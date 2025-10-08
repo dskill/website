@@ -13,6 +13,9 @@ collections:
   devlog:
     output: true
     permalink: /devlog/:name/
+  talks:
+    output: true
+    permalink: /talks/:name/
 
 defaults:
   - scope:
@@ -25,6 +28,11 @@ defaults:
       type: devlog
     values:
       layout: devlog
+  - scope:
+      path: ""
+      type: talks
+    values:
+      layout: talk
 
 url: "https://dskill.github.io"
 baseurl: "/website"

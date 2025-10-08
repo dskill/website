@@ -1,5 +1,5 @@
 ---
-title: "Rock Show VFX in Brutal Legend (2010)"
+title: "Rock Show VFX in Brutal Legend"
 date: 2010-03-31
 source_slug: "rock-show-vfx-in-brutal-legend"
 source_link: "/talks/rock-show-vfx-in-brutal-legend"
@@ -16,3 +16,4 @@ A VFX presentation shown at GDC 2010 [Brutal Legend VFX Presentation from GDC 20
     loading="lazy"
   ></iframe>
 </div>
+

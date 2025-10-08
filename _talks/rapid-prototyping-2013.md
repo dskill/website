@@ -1,5 +1,5 @@
 ---
-title: "Rapid Prototyping (2013)"
+title: "Rapid Prototyping"
 date: 2013-04-25
 source_slug: "post_id-3"
 source_link: "/talks/post_id-3"

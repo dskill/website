@@ -75,22 +75,31 @@
 - [x] Oculus | Kinect V2 | Audio Visualizer Test (`oculus-kinect-v2-audio-visualizer-test`)
 - [x] Physics Driven Fur Shader in 3ds Max (`physics-driven-fur-shader-in-3ds-max`)
 - [x] Plasma Ball HMD + Leap (`plasma-ball-hmd-leap`)
-- [x] Rapid Prototyping (2013) (`rapid-prototyping-2013`)
 - [x] Real-Time VFX in your Living Room (`real-time-vfx-in-your-living-room`)
 - [x] Relief Map Blending (`relief-map-blending`)
-- [x] Rock Show VFX in Brutal Legend (2010) (`rock-show-vfx-in-brutal-legend-2010`)
 - [x] Shooting Gallery | Leap Motion Prototype (`shooting-gallery-leap-motion-prototype`)
 - [x] Spaceship of the Imagination : Earth Day Remix (`spaceship-of-the-imagination-earth-day-remix`)
 - [x] Stacking (`stacking`)
-- [x] The Rise of Real Time (2017) (`the-rise-of-real-time-2017`)
 - [x] Tilt Brush (`tilt-brush`)
-- [x] Tilt Brush by Accident (2021) (`tilt-brush-by-accident-2021`)
 - [x] Time Lapse Climates in Brutal Legend (`time-lapse-climates-in-brutal-legend`)
 - [x] UV Displacement Particles (`uv-displacement-particles`)
 - [x] Visual Effects Artist Roundtable at GDC 2013 (`visual-effects-artist-roundtable-at-gdc-2013`)
-- [x] Visual Effects Artist Roundtables (2012-2019) (`visual-effects-artist-roundtables-2012-2019`)
 - [x] We've been acquired by Google! (`we-ve-been-acquired-by-google`)
 - [x] Weightless (`weightless`)
+
+## Remaining Entries
+- [ ] (none – all migrated)
+
+# Talks Migration Checklist
+- **Status overview:** 5 of 5 entries migrated (including layout/index work in progress).
+- **Next actions:** keep sourcing high-resolution thumbnails as needed and ensure new talks follow the same collection conventions.
+
+## Completed Entries
+- [x] Rock Show VFX in Brutal Legend (2010) (`rock-show-vfx-in-brutal-legend-2010`)
+- [x] Rapid Prototyping (2013) (`rapid-prototyping-2013`)
+- [x] The Rise of Real Time (2017) (`the-rise-of-real-time-2017`)
+- [x] Tilt Brush by Accident (2021) (`tilt-brush-by-accident-2021`)
+- [x] Visual Effects Artist Roundtables (2012-2019) (`visual-effects-artist-roundtables-2012-2019`)
 
 ## Remaining Entries
 - [ ] (none – all migrated)
