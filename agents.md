@@ -31,6 +31,70 @@
 - Project site deploys at `/website`; Jekyll baseurl is set to `/website`, so run `bundle exec jekyll serve --livereload --baseurl ""` for root-local testing.
 - When recreating experience pages, capture all source media locally and keep the copy identical to the original page text (no paraphrasing).
 
+# Dev Log Migration Checklist
+- **Status overview:** 55 of 55 entries migrated (including layout/index work in progress).
+- **Next actions:** continue replacing stubs with full copy/media, pulling assets into `assets/images/devlog/<slug>/`, and updating this tracker as we go.
+
+## Completed Entries
+- [x] \"Dead Balls\" is on the app store! (`dead-balls-is-on-the-app-store`)
+- [x] \"Super I Am 8 Bit\" Gallery Exhibition (`super-i-am-8-bit-gallery-exhibition`)
+- [x] Ahhh... Gamma.  You crafty bastard. (`ahhh-gamma-you-crafty-bastard`)
+- [x] Area Lights (`area-lights`)
+- [x] Audio Driven Particles (`audio-driven-particles`)
+- [x] Autonomous (`autonomous`)
+- [x] Brutal Legend VFX Reel (`brutal-legend-vfx-reel`)
+- [x] City Visualizer HMD + Leap (`city-visualizer-hmd-leap`)
+- [x] Climate Variation in Brutal Legend (`climate-variation-in-brutal-legend`)
+- [x] Concepts from Iron Brigade (Trenched) (`concepts-from-iron-brigade-trenched`)
+- [x] Concepts from Stacking (`concepts-from-stacking`)
+- [x] Curl Noise Particles (`curl-noise-particles`)
+- [x] Curved Relief Mapping in 3ds Max (`curved-relief-mapping-in-3ds-max`)
+- [x] Direct X 11 + Unity (`direct-x-11-unity`)
+- [x] Disaster Simulation (`disaster-simulation`)
+- [x] Experiments in Processing - Fire (`experiments-in-processing-fire`)
+- [x] Fluid Driven Voxels (`fluid-driven-voxels`)
+- [x] Fly Eye iPhone App (`fly-eye-iphone-app`)
+- [x] Galaxy Formation (`galaxy-formation`)
+- [x] Generative Art Experiments (`generative-art-experiments`)
+- [x] Grass Shader in 3ds Max (`grass-shader-in-3ds-max`)
+- [x] In the Studio (`in-the-studio`)
+- [x] Ink Rendering in Brutal Legend (`ink-rendering-in-brutal-legend`)
+- [x] Kinect + Spring Physics (`kinect-spring-physics`)
+- [x] Kinect motion blobs with Cloth Simulation (`kinect-motion-blobs-with-cloth-simulation`)
+- [x] Kinect V2 | Oculus | Depth Mirror (`kinect-v2-oculus-depth-mirror`)
+- [x] Kinect V2 | Oculus | Point Cloud Interactions and Energy Discs (`kinect-v2-oculus-point-cloud-interactions-and-energy-discs`)
+- [x] Kinect2 | Oculus | Depth Mirror | Particles (`kinect2-oculus-depth-mirror-particles`)
+- [x] Leap Prototype: The King's Hand (`leap-prototype-the-king-s-hand`)
+- [x] Little Pink Best Buds (`little-pink-best-buds`)
+- [x] Martian Telemetry Rendering (`martian-telemetry-rendering`)
+- [x] Maya PDC (Particle Disk Cache) exporter (`maya-pdc-particle-disk-cache-exporter`)
+- [x] Meeting sketch by Lee Petty (`meeting-sketch-by-lee-petty`)
+- [x] MoveNet Pose Model Launched (`movenet-pose-model-launched`)
+- [x] Music Reactive Brushes (`music-reactive-brushes`)
+- [x] Normal Mode Analysis of the Clathrin Cage and other Semi-Rigid Systems (`normal-mode-analysis-of-the-clathrin-cage-and-other-semi-rigid-systems`)
+- [x] Oculus | Kinect V2 | Audio Visualizer Test (`oculus-kinect-v2-audio-visualizer-test`)
+- [x] Physics Driven Fur Shader in 3ds Max (`physics-driven-fur-shader-in-3ds-max`)
+- [x] Plasma Ball HMD + Leap (`plasma-ball-hmd-leap`)
+- [x] Rapid Prototyping (2013) (`rapid-prototyping-2013`)
+- [x] Real-Time VFX in your Living Room (`real-time-vfx-in-your-living-room`)
+- [x] Relief Map Blending (`relief-map-blending`)
+- [x] Rock Show VFX in Brutal Legend (2010) (`rock-show-vfx-in-brutal-legend-2010`)
+- [x] Shooting Gallery | Leap Motion Prototype (`shooting-gallery-leap-motion-prototype`)
+- [x] Spaceship of the Imagination : Earth Day Remix (`spaceship-of-the-imagination-earth-day-remix`)
+- [x] Stacking (`stacking`)
+- [x] The Rise of Real Time (2017) (`the-rise-of-real-time-2017`)
+- [x] Tilt Brush (`tilt-brush`)
+- [x] Tilt Brush by Accident (2021) (`tilt-brush-by-accident-2021`)
+- [x] Time Lapse Climates in Brutal Legend (`time-lapse-climates-in-brutal-legend`)
+- [x] UV Displacement Particles (`uv-displacement-particles`)
+- [x] Visual Effects Artist Roundtable at GDC 2013 (`visual-effects-artist-roundtable-at-gdc-2013`)
+- [x] Visual Effects Artist Roundtables (2012-2019) (`visual-effects-artist-roundtables-2012-2019`)
+- [x] We've been acquired by Google! (`we-ve-been-acquired-by-google`)
+- [x] Weightless (`weightless`)
+
+## Remaining Entries
+- [ ] (none – all migrated)
+
 # Squarespace Scraping Workflow
 - Fetch metadata with curl: `curl -sS "https://blog.drewskillman.com/experiences/<slug>?format=json-pretty" -o reference/<slug>.json`. The response reliably includes titles, asset IDs, and pagination, but note that Squarespace leaves `item.body` empty for these legacy portfolio entries.
 - Grab the rendered HTML directly: `curl -sS "https://blog.drewskillman.com/experiences/<slug>" -o reference/<slug>.html`. This returns the full page markup without needing Playwright and has been the most dependable source for copy and gallery blocks.

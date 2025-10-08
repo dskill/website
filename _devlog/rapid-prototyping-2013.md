@@ -3,9 +3,8 @@ title: "Rapid Prototyping (2013)"
 date: 2013-04-25
 source_slug: "post_id-3"
 source_link: "/talks/post_id-3"
-status: stub
 ---
-**TODO:** Migrate full copy and embed assets from the original post.
 
-Media links to import:
-- http://drewskillman.com/gdc2013_rapid_prototyping.pdf
+Here are slides from my 2013 GDC Talk on [Rapid Prototyping](http://drewskillman.com/gdc2013_rapid_prototyping.pdf).
+
+It was one of my favorite topics then and it's one of my favorite topics now.

@@ -3,16 +3,16 @@ title: "Generative Art Experiments"
 date: 2023-01-05
 source_slug: "post_id-2"
 source_link: "/devlog/post_id-2"
-status: stub
 ---
-**TODO:** Migrate full copy and embed assets from the original post.
 
-Media links to import:
-- https://www.fxhash.xyz
-- https://www.fxhash.xyz/u/dskill
-- https://www.fxhash.xyz/gentk/38343
-- https://images.squarespace-cdn.com/content/v1/5839d6669f74566f0d714942/63beb58a-8724-48ef-88cd-bed3eb57168a/Screenshot+2023-01-05+130934.png?format=original
-- https://www.fxhash.xyz/generative/1038
-- https://images.squarespace-cdn.com/content/v1/5839d6669f74566f0d714942/66248a89-b17c-4f48-aaad-0cede77bd0b7/Screenshot+2023-01-05+130918.png?format=original
-- https://www.fxhash.xyz/generative/1047
-- https://images.squarespace-cdn.com/content/v1/5839d6669f74566f0d714942/0edd2e72-4847-4808-91a6-443a86ef97b6/Screenshot+2023-01-05+130855.png?format=original
+I’m not a fan of NFT’s in most cases, but generative art is an important exception. NFT’s allow people to generate, share, own, and trade unique instances of algorithmically generated work.
+
+[FXHash](https://www.fxhash.xyz)provides a great way to experiment. The block chain it runs on (XTZ) is efficient and the costs across the board are low.  Great for creative explorations and expression.
+
+I’ve been exploring generative pieces that create audio & visuals, in a deeply interconnected way.  You can find them all [here.](https://www.fxhash.xyz/u/dskill)
+
+![]({{ '/assets/images/devlog/generative-art-experiments/Screenshot-2023-01-05-130934.png' | relative_url }})[https://www.fxhash.xyz/gentk/38343](https://www.fxhash.xyz/gentk/38343)
+
+![]({{ '/assets/images/devlog/generative-art-experiments/Screenshot-2023-01-05-130918.png' | relative_url }})[https://www.fxhash.xyz/generative/1038](https://www.fxhash.xyz/generative/1038)
+
+![]({{ '/assets/images/devlog/generative-art-experiments/Screenshot-2023-01-05-130855.png' | relative_url }})[https://www.fxhash.xyz/generative/1047](https://www.fxhash.xyz/generative/1047)

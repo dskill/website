@@ -3,10 +3,10 @@ title: "The Rise of Real Time (2017)"
 date: 2017-05-25
 source_slug: "post_id-2"
 source_link: "/talks/post_id-2"
-status: stub
 ---
-**TODO:** Migrate full copy and embed assets from the original post.
 
-Media links to import:
-- http://drewskillman.com/rise_of_real_time.pdf
-- https://images.squarespace-cdn.com/content/v1/5839d6669f74566f0d714942/1495729846622-X30LQSQSNFI2S8SSIW5R/image-asset.png?format=original
+I organized the first VFX Boot Camp at GDC this year (2017).  It was incredible.
+
+Here are [slides]({{ '/assets/downloads/rise_of_real_time.pdf' | relative_url }}) from the first presentation given by myself and the talented Keith Guerrette. Looking forward to next year!
+
+[![Rise of Real Time slides thumbnail]({{ '/assets/images/devlog/the-rise-of-real-time-2017/image-asset.png' | relative_url }})]({{ '/assets/downloads/rise_of_real_time.pdf' | relative_url }})

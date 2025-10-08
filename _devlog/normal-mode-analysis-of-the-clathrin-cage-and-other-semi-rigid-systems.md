@@ -3,14 +3,18 @@ title: "Normal Mode Analysis of the Clathrin Cage and other Semi-Rigid Systems"
 date: 2013-04-01
 source_slug: "normal-mode-analysis-of-the-clathrin-cage-and-other-semi-rigid-systems"
 source_link: "/devlog/normal-mode-analysis-of-the-clathrin-cage-and-other-semi-rigid-systems"
-status: stub
 ---
-**TODO:** Migrate full copy and embed assets from the original post.
 
-Media links to import:
-- http://drewskillman.com/thesis.pdf
-- http://drewskillman.com/physics/mthcacode.html
-- https://images.squarespace-cdn.com/content/v1/5839d6669f74566f0d714942/1480186110510-4A3BABONAG6DSMAX811Y/comparison.jpg?format=original
-- https://images.squarespace-cdn.com/content/v1/5839d6669f74566f0d714942/1480186110805-QL02V00MGLAFV758FZE5/equilibrium.jpg?format=original
-- https://images.squarespace-cdn.com/content/v1/5839d6669f74566f0d714942/1480186111006-WT1X7VXK3XIHQVIXT3MC/tetra.jpg?format=original
-- https://images.squarespace-cdn.com/content/v1/5839d6669f74566f0d714942/1480186110951-6ACA37SEAFHWFT0SLA2Q/Screen-Shot-2015-07-20-at-12.53.17-AM.png?format=original
+Thesis: [Normal Mode Analysis of the Clathrin Cage and other Semi-Rigid Systems]({{ '/assets/downloads/normal-mode-analysis-thesis.pdf' | relative_url }}).
+
+The associated Mathematica notebooks can be found [here]({{ '/assets/downloads/mthcacode.nb' | relative_url }}). A ZIP of the notebook is also available [here]({{ '/assets/downloads/mthcacode.zip' | relative_url }}).
+
+**Abstract:** Simple geometric objects are treated as if the vertices are little masses, and the edges are springs. After performing a normal mode analysis, you can find (and visualize), the basic units of motion that compose all possible vibrations. This technique was applied to the neurotransmitter Clathrin in an effort to gain insight into its role in vesicle formation.
+
+![]({{ '/assets/images/devlog/normal-mode-analysis-of-the-clathrin-cage-and-other-semi-rigid-systems/comparison.jpg' | relative_url }})
+
+![]({{ '/assets/images/devlog/normal-mode-analysis-of-the-clathrin-cage-and-other-semi-rigid-systems/equilibrium.jpg' | relative_url }})
+
+![]({{ '/assets/images/devlog/normal-mode-analysis-of-the-clathrin-cage-and-other-semi-rigid-systems/tetra.jpg' | relative_url }})
+
+![]({{ '/assets/images/devlog/normal-mode-analysis-of-the-clathrin-cage-and-other-semi-rigid-systems/Screen-Shot-2015-07-20-at-12.53.17-AM.png' | relative_url }})
