@@ -3,9 +3,12 @@ title: "Autonomous"
 date: 2013-12-01
 source_slug: "autonomous"
 source_link: "/devlog/autonomous"
+thumbnail: /assets/images/devlog/autonomous/card-background.jpg
 ---
 
 **Autonomous** was the product of the 2012 "*Amnesia Fortnight*" game jam at Double Fine.  Led by Lee Petty, the first person procedural robot simulation battle game ended up being ported for **Leap Motion** as well.  I did technical art, visual effects, and lighting on the project.
+
+![Autonomous card background]({{ '/assets/images/devlog/autonomous/card-background.jpg' | relative_url }})
 
 <div class="experience-video">
   <iframe
@@ -68,4 +71,3 @@ Here are some great videos breaking down the details of **Autonomous**, the game
     ></iframe>
   </div>
 </div>
-

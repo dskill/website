@@ -3,6 +3,7 @@ title: "Generative Art Experiments"
 date: 2023-01-05
 source_slug: "post_id-2"
 source_link: "/devlog/post_id-2"
+thumbnail: /assets/images/devlog/generative-art-experiments/Screenshot-2023-01-05-130934.png
 ---
 
 I’m not a fan of NFT’s in most cases, but generative art is an important exception. NFT’s allow people to generate, share, own, and trade unique instances of algorithmically generated work.
