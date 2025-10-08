@@ -5,23 +5,14 @@
 - Assets (images/GIFs) live under `assets/images/`; homepage data driven by `_data/portfolio.yml`.
 
 # Recent Work
-- Recreated the Squarespace-style homepage (`index.html`) with custom layout (`_layouts/default.html`) and CSS (`assets/css/main.css`).  
-- Downloaded key project imagery from the legacy site and referenced locally.  
-- Navigation currently links out to legacy Squarespace sections for pages that do not exist yet.
-- Introduced an `_experiences` collection with a new layout and migrated the Slimeball! entry as the first test page.
-- Added a Tilt Brush experience entry with identical copy, local assets, and an embedded YouTube trailer.
-- Simplified the experience layout so content authors can arrange videos, images, and copy manually while reusing the existing CSS utility classes.
-- Styled Markdown image syntax so project content can stay in plain Markdown without extra HTML.
-- Removed the old link pill UI; experiences now just use standard Markdown content.
+- Migrated Squarespace content into local collections for experiences, dev log, and talks, with thumbnails and media hosted in-repo.  
+- Added internal About page, Talks index, and refreshed navigation/favicon to match the new structure.  
+- Established a reusable card layout with media previews across collections, plus local copies of reference PDFs and assets.
 
 # Next Steps
-1. **Collections**: migrate the remaining Experiences into `_experiences/` entries (repeat the Slimeball! structure) and, if needed, introduce `_devlog/` and `_talks/` collections. Update the homepage grid to read from the collection once content coverage is complete.  
-2. **Interior Pages**: add dedicated `about.md`, collection index pages, and detail templates. Mirror existing Squarespace structure but keep content concise and Markdown-friendly.  
-3. **Design Polish**: extend current CSS to handle text-heavy pages, responsive typography, and potential light/dark variants. Consider reusable components/partials for hero sections, galleries, etc.  
-4. **Image Management**: normalize filenames, document sources, and ensure compression where possible. Consider automating srcset generation or using Jekyll plugins if needed (verify GitHub Pages compatibility).  
-5. **Content Migration**: manual recreation preferred over importing the Squarespace WordPress XML (export lacks clean media references and introduces heavy inline HTML). Use export only as reference copy.  
-6. **SEO & Metadata**: add meaningful descriptions and social cards per page. Update `_config.yml` `url` once final domain is set.  
-7. **Testing**: rely on `bundle exec jekyll serve --livereload` for local preview. Add CI (e.g., GitHub Actions) to run `bundle exec jekyll build` if workflow grows.
+1. **Spot Check**: audit every migrated page for missing or low-res media, broken embeds, and copy gaps; fix issues and note anything needing reshoots.  
+2. **Polish & Updates**: add any outstanding assets, tighten formatting, and stage new posts/experiences once QA passes.  
+3. **Domain Cutover**: point `projects.drewskillman.com` (or the final production domain) at this GitHub Pages build, verify HTTPS, and confirm redirects.
 
 # Gotchas
 - Git needs Ruby 3.1.4 active; avoid mixing with system Ruby (2.6) to prevent Bundler errors.  
@@ -32,7 +23,8 @@
 - When recreating experience pages, capture all source media locally and keep the copy identical to the original page text (no paraphrasing).
 
 # Dev Log Migration Checklist
-- **Status overview:** 55 of 55 entries migrated (including layout/index work in progress).
+- **Current focus:** spot-check for missing media or copy, then polish content before new additions.
+- **Status overview:** 59 of 59 entries migrated (including layout/index work in progress).
 - **Next actions:** continue replacing stubs with full copy/media, pulling assets into `assets/images/devlog/<slug>/`, and updating this tracker as we go.
 
 ## Completed Entries
@@ -91,7 +83,7 @@
 - [ ] (none – all migrated)
 
 # Talks Migration Checklist
-- **Status overview:** 5 of 5 entries migrated (including layout/index work in progress).
+- **Status overview:** 59 of 59 entries migrated (including layout/index work in progress).
 - **Next actions:** keep sourcing high-resolution thumbnails as needed and ensure new talks follow the same collection conventions.
 
 ## Completed Entries
