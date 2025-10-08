@@ -1,6 +1,7 @@
 ---
-title: "Concepts from Stacking"
+title: Concepts from Stacking
 date: 2012-02-25
+thumbnail: /assets/images/devlog/concepts-from-stacking/secret_hideout_raw.jpg
 ---
 
 Here are some lighting paintovers I did for the secret hideout in [Stacking](http://www.stackingvideogame.com/).

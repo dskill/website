@@ -1,8 +1,9 @@
 ---
-title: "Normal Mode Analysis of the Clathrin Cage and other Semi-Rigid Systems"
+title: Normal Mode Analysis of the Clathrin Cage and other Semi-Rigid Systems
 date: 2013-04-01
-source_slug: "normal-mode-analysis-of-the-clathrin-cage-and-other-semi-rigid-systems"
-source_link: "/devlog/normal-mode-analysis-of-the-clathrin-cage-and-other-semi-rigid-systems"
+source_slug: normal-mode-analysis-of-the-clathrin-cage-and-other-semi-rigid-systems
+source_link: /devlog/normal-mode-analysis-of-the-clathrin-cage-and-other-semi-rigid-systems
+thumbnail: /assets/downloads/normal-mode-analysis-thesis.pdf
 ---
 
 Thesis: [Normal Mode Analysis of the Clathrin Cage and other Semi-Rigid Systems]({{ '/assets/downloads/normal-mode-analysis-thesis.pdf' | relative_url }}).

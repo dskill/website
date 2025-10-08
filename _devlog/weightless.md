@@ -1,8 +1,9 @@
 ---
-title: "Weightless"
+title: Weightless
 date: 2013-03-31
-source_slug: "weightless"
-source_link: "/devlog/weightless"
+source_slug: weightless
+source_link: /devlog/weightless
+thumbnail: /assets/images/devlog/weightless/concept.jpg
 ---
 
 Rough concept for a game idea.

@@ -1,8 +1,9 @@
 ---
-title: "Area Lights"
+title: Area Lights
 date: 2014-04-01
-source_slug: "area-lights"
-source_link: "/devlog/area-lights"
+source_slug: area-lights
+source_link: /devlog/area-lights
+thumbnail_video: https://player.vimeo.com/video/78976709
 ---
 <div class="experience-video">
   <iframe

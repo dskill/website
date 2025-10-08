@@ -1,8 +1,9 @@
 ---
-title: "Music Reactive Brushes"
+title: Music Reactive Brushes
 date: 2015-11-26
-source_slug: "music-reactive-brushes"
-source_link: "/devlog/music-reactive-brushes"
+source_slug: music-reactive-brushes
+source_link: /devlog/music-reactive-brushes
+thumbnail_video: https://www.youtube.com/embed/uFzAB4mr3KI?wmode=opaque&enablejsapi=1
 ---
 
 I created a set of music reactive brushes for Tilt Brush, and put together this launch trailer to go along with it.

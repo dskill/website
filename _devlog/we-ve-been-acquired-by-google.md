@@ -1,8 +1,9 @@
 ---
-title: "We've been acquired by Google!"
+title: We've been acquired by Google!
 date: 2014-04-26
-source_slug: "weve-been-acquired-by-google"
-source_link: "/devlog/weve-been-acquired-by-google"
+source_slug: weve-been-acquired-by-google
+source_link: /devlog/weve-been-acquired-by-google
+thumbnail: /assets/images/devlog/we-ve-been-acquired-by-google/Screen-Shot-2016-11-26-at-9.55.36-AM.png
 ---
 ![]({{ '/assets/images/devlog/we-ve-been-acquired-by-google/Screen-Shot-2016-11-26-at-9.55.36-AM.png' | relative_url }})
 

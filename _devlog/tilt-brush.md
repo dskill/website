@@ -1,8 +1,9 @@
 ---
-title: "Tilt Brush"
+title: Tilt Brush
 date: 2014-04-12
-source_slug: "tilt-brush"
-source_link: "/devlog/tilt-brush"
+source_slug: tilt-brush
+source_link: /devlog/tilt-brush
+thumbnail_video: https://player.vimeo.com/video/108488030?wmode=opaque&api=1
 ---
 
 Tilt Brush is a VR Painting tool created by Patrick Hackett and myself.  Below are a few videos we've put together, lots more on the way!

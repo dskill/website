@@ -1,8 +1,9 @@
 ---
-title: "Relief Map Blending"
+title: Relief Map Blending
 date: 2007-03-31
-source_slug: "relief-map-blending"
-source_link: "/devlog/relief-map-blending"
+source_slug: relief-map-blending
+source_link: /devlog/relief-map-blending
+thumbnail_video: https://player.vimeo.com/video/8664844?wmode=opaque&api=1
 ---
 
 Normal map and Relief Maps are blended in this shader. Depth, Diffuse, Specular and Normal maps are modulated based on a vertex data channel values which allows interactive viewport experimentation. Note the convincing irregularities that occur when the vertex channel has partial opactiy.

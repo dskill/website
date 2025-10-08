@@ -1,8 +1,9 @@
 ---
-title: "Audio Driven Particles"
+title: Audio Driven Particles
 date: 2009-03-31
-source_slug: "audio-driven-particles"
-source_link: "/devlog/audio-driven-particles"
+source_slug: audio-driven-particles
+source_link: /devlog/audio-driven-particles
+thumbnail_video: https://player.vimeo.com/video/31532456
 ---
 Another processing experiment that drives particle forces and OpenGL shaders with audio.
 

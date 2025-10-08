@@ -1,8 +1,9 @@
 ---
-title: "Ahhh... Gamma.  You crafty bastard."
+title: Ahhh... Gamma.  You crafty bastard.
 date: 2010-10-01
-source_slug: "ahhh-gamma-you-crafty-bastard"
-source_link: "/devlog/ahhh-gamma-you-crafty-bastard"
+source_slug: ahhh-gamma-you-crafty-bastard
+source_link: /devlog/ahhh-gamma-you-crafty-bastard
+thumbnail: /assets/images/devlog/ahhh-gamma-you-crafty-bastard/baked_lighting_comparison1.jpg
 ---
 
 [Jon Hable gave a phenomenal speech at GDC 2010](http://dl.dropbox.com/u/187083/Papers/Hable_John_Uncharted2_HDRLighting.pptx) last year that drove home for many people the importance of knowing gamma - inviting him into your house, and serving mr. gamma a tasty beer.

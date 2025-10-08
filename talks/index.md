@@ -8,7 +8,7 @@ permalink: /talks/
   <header class="devlog-index-header">
     <h1>Talks</h1>
     <p class="devlog-index-description">
-      Conference sessions, roundtables, and guest lectures. Most include slide decks or recordings you can dive into directly.
+      Conference sessions, roundtables, and guest lectures.
     </p>
   </header>
 
