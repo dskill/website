@@ -15,3 +15,5 @@ This repository hosts a GitHub Pages-powered site. It currently includes a simpl
 4. Visit `http://localhost:4000` in your browser to confirm the site renders.
 
 GitHub Pages will build this site using the same configuration, so what you see locally should match production.
+
+If you only need to verify that the site compiles without starting the server, run `bundle exec jekyll build` to perform a quick build check.
