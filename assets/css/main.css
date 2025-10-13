@@ -363,10 +363,11 @@ a:focus {
   padding: 1.25rem;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
     monospace;
-  font-size: 0.95rem;
+  font-size: clamp(0.45rem, 2vw, 0.95rem);
   line-height: 1.5;
   background: transparent;
   max-width: 100%;
+  overflow-x: auto;
 }
 
 .experience-content pre code {
