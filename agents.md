@@ -107,7 +107,4 @@
 # Progress Tracker
 - **Experiences migrated (`_experiences/`):** `slimeball`, `tilt-brush`, `movenet-fluids`, `skillman-hackett-prototypes`, `dropchord`, `my-alien-buddy`, `playground`, `kinect-party`. Homepage cards for these now point to internal pages.
 - **Experiences still external:** `brutal-legend`, `stacking`, `trenched` (AKA Iron Brigade), `avfx-1-wip`. They remain linked out in `_data/portfolio.yml` and need local copies plus assets.
-- **Interior pages outstanding:** `about`, collection landing pages for experiences/devlog/talks, individual dev log posts, and talks archive entries. Mirror the Squarespace content once the experience set is complete.
 
-# Next Task
-- Migrate the "Skillman & Hackett Prototypes" Squarespace entry into `_experiences/` with identical copy, local assets, and any embedded media so the homepage card can link internally.
