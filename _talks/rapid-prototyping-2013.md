@@ -3,6 +3,7 @@ title: "Rapid Prototyping"
 date: 2013-04-25
 source_slug: "post_id-3"
 source_link: "/talks/post_id-3"
+thumbnail: /assets/images/talks/rapid-prototyping-2013/rapid-prototyping-2013-thumbnail.webp
 ---
 
 Here are slides from my 2013 GDC Talk on [Rapid Prototyping](http://drewskillman.com/gdc2013_rapid_prototyping.pdf).
