@@ -34,5 +34,5 @@ defaults:
     values:
       layout: talk
 
-url: "https://dskill.github.io"
-baseurl: "/website"
+url: "https://projects.drewskillman.com"
+baseurl: ""
