@@ -7,22 +7,32 @@
   - In GitHub Pages settings, add `drewskillman.com` as a custom domain (it can coexist with `projects.drewskillman.com` if you want both). GitHub will provision the HTTPS cert and write/expect a `CNAME` file with the hostname.
   - Optionally, use a simple `_redirects` page or Jekyll’s `jekyll-redirect-from` plugin to send `drewskillman.com` visitors to `projects.drewskillman.com`, if that’s your preferred canonical domain.
 
-# GitHub Pages Site
+## Overview
 
-This repository hosts a GitHub Pages-powered site. It currently includes a simple placeholder page so you can verify the publishing workflow end-to-end.
+This repository contains the in-progress rebuild of the Drew Skillman portfolio site. It is a custom Jekyll project (no parent theme) that targets GitHub Pages and serves from `projects.drewskillman.com`.
 
-## Local development
+## Requirements
 
-1. Ensure you have Ruby (>= 3.0) and Bundler installed (`gem install bundler` if you need it).
-2. Install dependencies: `bundle install`
-3. Serve locally using the GitHub Pages configuration (override the baseurl so the site is served from the root in development):
+- Ruby 3.1.4 via `rbenv` (the repo assumes shims are available on PATH).
+- Bundler (`gem install bundler` after installing Ruby).
 
-   ```bash
-   bundle exec jekyll serve --livereload --baseurl ""
-   ```
+## Setup
 
-4. Visit `http://localhost:4000` in your browser to confirm the site renders.
+1. Install dependencies: `bundle install`
+2. Optionally verify the build without serving: `bundle exec jekyll build`
 
-GitHub Pages will build this site using the same configuration, so what you see locally should match production.
+## Development
 
-If you only need to verify that the site compiles without starting the server, run `bundle exec jekyll build` to perform a quick build check.
+- Start a live-reload server with the convenience script (preferred because it bootstraps `rbenv` and sets the correct base URL):
+
+  ```bash
+  ./scripts/live-serve.sh
+  ```
+
+  The script listens on `http://127.0.0.1:4000` with livereload enabled.
+
+- If you need to run the server manually, use `bundle exec jekyll serve --livereload --baseurl ""`.
+
+## Deployment
+
+GitHub Pages builds `main` automatically. Commit any changes (including the `CNAME` file) and push to publish.
