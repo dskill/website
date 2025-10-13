@@ -1,3 +1,12 @@
+# TODO
+
+- Long-term (recommended): Stop using the legacy server entirely, and point the apex at GitHub Pages:
+  - In cPanel Zone Editor, delete the A record `drewskillman.com → 216.37.42.226`.
+  - Add GitHub’s four A records for the apex: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`.
+  - Point `www` directly to GitHub with a CNAME to `dskill.github.io.` if it isn’t already.
+  - In GitHub Pages settings, add `drewskillman.com` as a custom domain (it can coexist with `projects.drewskillman.com` if you want both). GitHub will provision the HTTPS cert and write/expect a `CNAME` file with the hostname.
+  - Optionally, use a simple `_redirects` page or Jekyll’s `jekyll-redirect-from` plugin to send `drewskillman.com` visitors to `projects.drewskillman.com`, if that’s your preferred canonical domain.
+
 # GitHub Pages Site
 
 This repository hosts a GitHub Pages-powered site. It currently includes a simple placeholder page so you can verify the publishing workflow end-to-end.
