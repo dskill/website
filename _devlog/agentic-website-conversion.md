@@ -10,6 +10,12 @@ thumbnail: /assets/images/devlog/agentic-website-conversion/squarespace-to-githu
 
 The push to rebuild my site on GitHub Pages started as a practical alternative to Squarespace, but it quickly became a project about creative freedom. Running everything out of this repository means I finally have a transparent system where every page, asset, and layout is visible, versioned, and easy to change. The contrast with my old Squarespace setup is night and day: instead of feeling boxed in by their editor, I now have full ownership over the content I have been paying them to host for years.
 
+<img src="{{ '/assets/images/devlog/agentic-website-conversion/squarespace_example.jpg' | relative_url }}" alt="Squarespace Dev Log" style="max-width: 400px; width: 100%;">
+*The old Squarespace setup*
+
+<img src="{{ '/assets/images/devlog/agentic-website-conversion/githubpages_example.jpg' | relative_url }}" alt="GitHub Pages Dev Log" style="max-width: 400px; width: 100%;">
+*The new GitHub Pages build*
+
 The real breakthrough, though, is how well this new setup works with agents. Because the whole site lives in code, I can ask an agent to tweak the style of a section, rewrite copy, or automate the repetitive parts of publishing without worrying about a rigid UI fighting me. Delegating the tedious bits of documentation to an agent keeps my momentum up, and lets me focus on the creative decisions that actually matter.
 
 ## The Migration Workflow
@@ -18,10 +24,12 @@ The conversion involved scraping 59 dev log entries, 5 talks, and 8 major experi
 
 ```bash
 # Fetch the rendered HTML
-curl -sS "https://blog.drewskillman.com/experiences/<slug>" -o reference/<slug>.html
+curl -sS "https://blog.drewskillman.com/experiences/<slug>" \
+  -o reference/<slug>.html
 
 # Download media from the CDN
-curl -sS "https://images.squarespace-cdn.com/content/..." -o assets/images/<slug>/image.jpg
+curl -sS "https://images.squarespace-cdn.com/content/..." \
+  -o assets/images/<slug>/image.jpg
 
 # Create the Jekyll collection entry
 cat > _experiences/<slug>.md

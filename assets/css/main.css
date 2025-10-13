@@ -351,6 +351,29 @@ a:focus {
   margin: 1.5rem 0;
 }
 
+.experience-content .highlight {
+  background: var(--bg-alt);
+  border-radius: var(--border-radius);
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.experience-content pre {
+  margin: 0;
+  padding: 1.25rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+    monospace;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  background: transparent;
+  max-width: 100%;
+}
+
+.experience-content pre code {
+  display: block;
+  white-space: pre;
+}
+
 .experience-content img + img {
   margin-top: -0.5rem;
 }
