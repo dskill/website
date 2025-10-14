@@ -8,7 +8,7 @@ permalink: /devlog/
   <header class="devlog-index-header">
     <h1>Dev Log</h1>
     <p class="devlog-index-description">
-      Personal notes, prototypes, and behind-the-scenes explorations.
+      Personal notes and prototypes.
     </p>
   </header>
 

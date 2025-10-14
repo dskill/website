@@ -14,7 +14,7 @@ permalink: /about/
       
       Drew Skillman is a creative coder and technical artist blending traditional craft with emerging media: AI, natural motion, virtual &amp; augmented reality, music, and interactive installations.
  <br><br>
-      He is the co-creator of <a href="https://tiltbrush.com" target="_blank" rel="noreferrer">Tilt Brush</a>, the award-winning VR painting application acquired by Google in 2015. His career spans AAA console titles, experimental XR experiences, machine learning prototypes, and cloud-rendered visualizations. Drew leads cross-disciplinary teams that combine art, design, and engineering to create expressive, immersive tools.
+      He is the co-creator of <a href="https://tiltbrush.com" target="_blank" rel="noreferrer">Tilt Brush</a>, a VR painting application acquired by Google in 2015. His career spans AAA console titles, experimental XR experiences, machine learning prototypes, and cloud-rendered visualizations. Drew leads cross-disciplinary teams that combine art, design, and engineering to create expressive, immersive tools.
   <br><br>
       Drew is currently developing an unnannounced generative AI game.
     </p>
