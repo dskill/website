@@ -38,5 +38,3 @@ cat > _experiences/<slug>.md
 The agent would parse the saved HTML, extract text blocks and image URLs, download all media to `assets/images/<slug>/`, and generate the corresponding markdown file with proper frontmatter. What would have taken days of tedious copy-paste became a systematic process I could review and refine.  It took about 4 hours to complete, a lot of which was me just keeping an eye on the agent as it worked and making sure I didn't get screwed by any weird prompt injections.  That part of a workflow like this is still a bit unnerving.
 
 Under the old squarespace workflow, I would have skipped documenting this entirely.  Now it is a lightweight task that fits into the cracks of my day.
-
-**Documentation should not be the weak link in my creative chain.**
