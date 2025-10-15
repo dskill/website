@@ -16,7 +16,7 @@ The push to rebuild my site on GitHub Pages started as a practical alternative t
 <img src="{{ '/assets/images/devlog/agentic-website-conversion/githubpages_example.jpg' | relative_url }}" alt="GitHub Pages Dev Log" style="max-width: 400px; width: 100%;">
 *The new GitHub Pages build*
 
-The real breakthrough, though, is how well this new setup works with agents. Because the whole site lives in code, I can ask an agent to tweak the style of a section, rewrite copy, or automate the repetitive parts of publishing without worrying about a rigid UI fighting me. Delegating the tedious bits of documentation to an agent keeps my momentum up, and lets me focus on the creative decisions that actually matter.
+The real breakthrough, though, is how well this new setup works with agents. By "agent" I mean tools like Codex CLI, Codex Web, Claude Code CLI, or Cursor that let you direct an AI to edit the repo. Because the whole site lives in code, I can ask an agent to tweak the style of a section, rewrite copy, or automate the repetitive parts of publishing without worrying about a rigid UI fighting me. Delegating the tedious bits of documentation to an agent keeps my momentum up, and lets me focus on the creative decisions that actually matter.
 
 ## The Migration Workflow
 
