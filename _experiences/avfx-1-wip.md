@@ -52,7 +52,7 @@ The device and app run an MCP server that lets the agent manage application stat
 
 ## Connectivity and Offline Use
 
-Jam sessions proved the rig has to perform well offline. When Wi-Fi is available you get the full Magenta-powered capabilities and access to the public effects repository, but without connectivity the device keeps working—just without cloud features.
+Jam sessions proved the rig has to perform well offline. When Wi-Fi is available you get the full AI-powered capabilities and access to the public effects repository, but without connectivity the device keeps working—just without cloud features.
 
 ## Software Stack and Deployment
 
@@ -64,7 +64,7 @@ Even with all these tools, the agent still feels slow—creative flow demands fa
 
 ## Setup Notes
 
-There are still some rough edges to iron out. Setting up Git push support requires configuring credentials on-device. Enabling the Magenta LLM features means setting up billing with the agent tool. I added in-app Wi-Fi provisioning, but connecting remains clumsy.
+There are still some rough edges to iron out. Setting up Git push support requires configuring credentials on-device. Enabling the agentic LLM features means setting up billing with the agent tool. I added in-app Wi-Fi provisioning, but connecting remains clumsy.
 
 ## Work in Progress Gallery
 
@@ -80,4 +80,4 @@ There are still some rough edges to iron out. Setting up Git push support requir
 
 ![]({{ '/assets/images/avfx-1-wip/IMG_1497.jpg' | relative_url }})
 
-_Image credits: Patrick Hackett and Bryan Minn._
+_Image credits: Drew Skillman, Patrick Hackett and Brian Min._
