@@ -13,7 +13,7 @@ The app is cross platform but the current build runs on a Raspberry Pi 4B with a
 
 <div class="experience-video">
   <iframe
-    src="https://www.youtube.com/embed/DUmbHycygms"
+    src="https://www.youtube.com/embed/F8hc9fiANtE"
     title="Doctor Rock demo"
     allow="autoplay; fullscreen; picture-in-picture"
     allowfullscreen
