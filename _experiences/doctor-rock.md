@@ -1,7 +1,7 @@
 ---
 title: "Doctor Rock"
 ---
-![]({{ '/assets/images/avfx-1-wip/IMG_8613.jpg' | relative_url }})
+![]({{ '/assets/images/doctor-rock/IMG_8613.jpg' | relative_url }})
 
 # Overview
 
@@ -70,13 +70,13 @@ To be clear, I am not proud of the code written for this.  It is definitely "cod
 ## Contributers and Attributions
 
 Shoutout to Patrick Hackett and Brian Min for co-creating the initial prototype.  Maybe we'll regroup on a bigger production push someday.
-![]({{ '/assets/images/avfx-1-wip/screenshot-2025-04-24-21-40-14.png' | relative_url }})
+![]({{ '/assets/images/doctor-rock/screenshot-2025-04-24-21-40-14.png' | relative_url }})
 *Initial prototype from 2022*
 
 Shoutout to Matthew Bice who inspired the 2nd iteration, where you actually talk to him and he talks back.
 
-![]({{ '/assets/images/avfx-1-wip/IMG_1497.jpg' | relative_url }})
-![]({{ '/assets/images/avfx-1-wip/IMG_1451.jpg' | relative_url }})
+![]({{ '/assets/images/doctor-rock/IMG_1497.jpg' | relative_url }})
+![]({{ '/assets/images/doctor-rock/IMG_1451.jpg' | relative_url }})
 *2nd iteration from 2023*
 
 Since the app can use ShaderToy-style GLSL sketches, many of the visualizers are modified versions of the original ShaderToy sketches. For example:
@@ -91,5 +91,5 @@ Wow you made it this far!  Thanks for reading.  This has been a really fun proje
 
 If you want to learn more about my work or get in touch, check out my [info here](/about).
 
-![]({{ '/assets/images/avfx-1-wip/IMG_9055.jpg' | relative_url }})
+![]({{ '/assets/images/doctor-rock/IMG_9055.jpg' | relative_url }})
 

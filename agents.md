@@ -105,5 +105,5 @@
 - Only fall back to Playwright if a page depends on client-side rendering (none of the current Experiences do). If you need it, reactivate the virtualenv in `.venv`, reinstall browsers with `playwright install`, and reuse the script in `reference/` as a last resort.
 
 # Progress Tracker
-- **Experiences migrated (`_experiences/`):** `slimeball`, `tilt-brush`, `skillman-hackett-prototypes`, `dropchord`, `my-alien-buddy`, `playground`, `kinect-party`. Homepage cards for these now point to internal pages.
-- **Experiences still external:** `brutal-legend`, `stacking`, `trenched` (AKA Iron Brigade), `avfx-1-wip`. They remain linked out in `_data/portfolio.yml` and need local copies plus assets.
+- **Experiences migrated (`_experiences/`):** `slimeball`, `tilt-brush`, `skillman-hackett-prototypes`, `dropchord`, `my-alien-buddy`, `playground`, `kinect-party`, `doctor-rock`. Homepage cards for these now point to internal pages.
+- **Experiences still external:** `brutal-legend`, `stacking`, `trenched` (AKA Iron Brigade). They remain linked out in `_data/portfolio.yml` and need local copies plus assets.
