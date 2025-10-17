@@ -65,7 +65,7 @@ To be clear, I am not proud of the code written for this.  It is definitely "cod
 
 ## Learnings and Limitations
 - The agent capabilities are still too slow for the creative flow state they are intended to unlock. 
-- Boot time is similarly sluggish.  
+- Raspberry Pi boot time is slow (not optimized).
 - Setting up Git push support requires configuring credentials on-device. 
 - Enabling the agentic LLM features means setting up billing with the agent tool. 
 - I added in-app Wi-Fi provisioning, but connecting remains clumsy.
