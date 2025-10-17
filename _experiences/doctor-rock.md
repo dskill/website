@@ -29,10 +29,13 @@ The project started as a playful hardware experiment among friends, took several
 
 For this iteration, Doctor Rock runs on a Raspberry Pi 4B paired with a [Pisound](https://blokas.io/pisound/) HAT that delivers ~2.1 ms loopback latency while providing balanced stereo in/out over 1/4" jacks, a solid preamp, and level control.  The rig boots into [Patchbox OS](https://blokas.io/patchbox-os/), whose real-time Linux kernel keeps audio processing in the low-single-digit millisecond range. The hardware stack accepts line-level instruments such as guitars, handles microphones cleanly, midi inputs (keyboards/faders/etc) includes an onboard mic for agent commands, and leaves room for external footswitch inputs if needed.
 
-## CAD Modeling and Hardware Fabrication
+## CAD Modeling
 
-The enclosure was designed in Fusion 360 and laser cut on my Glowforge. 
-
+I modeled and designed the enclosure in Fusion 360, and laser cut it on my Glowforge.  There were probably about 20 different variations as I explored the best way to fit all the components, while keeping the project extensible (e.g. not blocking access to USB ports, sd card slots, etc).
+<div class="media-grid">
+  <img src="{{ '/assets/images/doctor-rock/wireframe1.png' | relative_url }}" alt="Doctor Rock wireframe design 1">
+  <img src="{{ '/assets/images/doctor-rock/wireframe2.png' | relative_url }}" alt="Doctor Rock wireframe design 2">
+</div>
 
 ## Agentic Control and Natural Language Processing
 
@@ -75,8 +78,10 @@ Shoutout to Patrick Hackett and Brian Min for co-creating the initial prototype.
 
 Shoutout to Matthew Bice who inspired the 2nd iteration, where you actually talk to him and he talks back.
 
-![]({{ '/assets/images/doctor-rock/IMG_1497.jpg' | relative_url }})
-![]({{ '/assets/images/doctor-rock/IMG_1451.jpg' | relative_url }})
+<div class="media-grid">
+  <img src="{{ '/assets/images/doctor-rock/IMG_1497.jpg' | relative_url }}" alt="Doctor Rock assembly">
+  <img src="{{ '/assets/images/doctor-rock/IMG_1451.jpg' | relative_url }}" alt="Doctor Rock assembly">
+</div>
 *2nd iteration from 2023*
 
 Since the app can use ShaderToy-style GLSL sketches, many of the visualizers are modified versions of the original ShaderToy sketches. For example:
