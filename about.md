@@ -16,12 +16,12 @@ permalink: /about/
  <br><br>
       He is the co-creator of <a href="https://tiltbrush.com" target="_blank" rel="noreferrer">Tilt Brush</a>, a VR painting application acquired by Google in 2015. His career spans AAA console titles, experimental XR experiences, machine learning prototypes, and cloud-rendered visualizations. Drew leads cross-disciplinary teams that combine art, design, and engineering to create expressive, immersive tools.
   <br><br>
-      Drew is currently developing an unnannounced generative AI game.
+      Drew is currently developing an unannounced generative AI game.
     </p>
 
     <h2>Projects</h2>
     <ul class="experience-list">
-      <li><strong>Unnanounced Title</strong> — Under Development</li>
+      <li><strong>Unannounced Title</strong> — Under Development</li>
       <li><strong>Slimeball!</strong> — Meta Quest Pro VR</li>
       <li><strong>Cloud-rendered ML prototypes</strong></li>
       <li><strong>Cloud automotive rendering</strong></li>
