@@ -51,6 +51,24 @@ Supercollider sends realtime waveform data to the visualizer via OSC.  The front
 
 The device and app run an MCP server that lets the agent manage application state through natural language. That bridge is the key glue between the agent and the application, allowing the agent to create new effects, edit parameters, set defaults, capture logs, and generally keep the system in flow. Because AI agents make tools like Git incredibly intuitive, Doctor Rock leans on Git for effect management and community sharing. A public repository doubles as local storage for personal patches, while branches provide room for experimentation and structured contributions. Because the entire audio engine lives as SuperCollider code inside that repository, adding new capabilities stays straightforward. The MCP integration also means the agent can run Git commands for you, effectively giving the device one of the most powerful version-control workflows available for branching, sharing, and local storage.
 
+*Example effect repo directory structure:*
+```
+effects/
+├── audio/                        
+│   ├── autowah.sc
+│   ├── bypass.sc
+│   ├── baxandall_distortion.sc
+│   └── ...
+├── shaders/                       
+│   ├── ascii.glsl
+│   ├── spectral.glsl
+│   ├── flames.glsl
+│   └── ...
+├── utilities/                     
+│   ├── init.sc
+├── agents.md    
+```
+
 ## Software Stack and Deployment
 
 After many permutations, the current stack combines a SuperCollider backend, an Electron application layer, and a React front end. That setup stays cross-platform: I build on macOS and can produce ARM builds for the Pi directly. On startup the application checks GitHub releases and pulls down updates when needed.
