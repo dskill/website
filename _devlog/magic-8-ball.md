@@ -23,4 +23,5 @@ Qwen at 0.6B is fast but not smart. It can't reason or follow complex instructio
 
 Speak a question, Whisper transcribes it, Qwen generates an answer, TTS reads it back. Shader effects complete the aesthetic. Requires Chrome with WebGPU.
 
+- Try it: [Magic 8 Ball](https://dskill.github.io/magic-8-ball/)
 - Source: [magic-8-ball on GitHub](https://github.com/dskill/magic-8-ball)
