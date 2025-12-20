@@ -9,11 +9,6 @@
 - Added internal About page, Talks index, and refreshed navigation/favicon to match the new structure.  
 - Established a reusable card layout with media previews across collections, plus local copies of reference PDFs and assets.
 
-# Next Steps
-1. **Spot Check**: audit every migrated page for missing or low-res media, broken embeds, and copy gaps; fix issues and note anything needing reshoots.  
-2. **Polish & Updates**: add any outstanding assets, tighten formatting, and stage new posts/experiences once QA passes.  
-3. **Domain Cutover**: point `projects.drewskillman.com` (or the final production domain) at this GitHub Pages build, verify HTTPS, and confirm redirects.
-
 # Devlog Entry Conventions
 
 ## Frontmatter Fields
