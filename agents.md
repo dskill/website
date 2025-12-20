@@ -14,6 +14,37 @@
 2. **Polish & Updates**: add any outstanding assets, tighten formatting, and stage new posts/experiences once QA passes.  
 3. **Domain Cutover**: point `projects.drewskillman.com` (or the final production domain) at this GitHub Pages build, verify HTTPS, and confirm redirects.
 
+# Devlog Entry Conventions
+
+## Frontmatter Fields
+```yaml
+---
+title: "Entry Title"
+date: 2025-12-15
+source_slug: entry-slug
+source_link: /devlog/entry-slug
+thumbnail: /assets/images/devlog/entry-slug/image.png  # Shows on devlog index
+thumbnail_video: https://player.vimeo.com/video/12345  # Alternative: video thumbnail
+---
+```
+
+## Image Storage
+- Store images locally at `assets/images/devlog/<slug>/`
+- Prefer local images over external URLs (GitHub raw links, CDNs) for reliability
+- Download images from source repos when file size is reasonable
+- To fetch from GitHub repos: `curl -sL -H "Accept: application/vnd.github.v3.raw" "https://api.github.com/repos/<owner>/<repo>/contents/<path>" -o <filename>`
+
+## Image Display
+- Single image: `![Alt text](/assets/images/devlog/slug/image.png)`
+- Horizontal grid:
+```html
+<div style="display: flex; gap: 10px; margin: 20px 0;">
+  <img src="/assets/images/devlog/slug/img1.png" alt="Description" style="flex: 1; max-width: 33%;">
+  <img src="/assets/images/devlog/slug/img2.png" alt="Description" style="flex: 1; max-width: 33%;">
+</div>
+```
+- With Jekyll relative_url: `{{ '/assets/images/devlog/slug/image.png' | relative_url }}`
+
 # Gotchas
 - Git needs Ruby 3.1.4 active; avoid mixing with system Ruby (2.6) to prevent Bundler errors.  
 - GitHub Pages supports only whitelisted plugins; stick to `jekyll-feed`, `jekyll-seo-tag`, and other approved gems unless deploying via GitHub Actions.  
