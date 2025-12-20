@@ -7,7 +7,7 @@ source_link: /devlog/magic-8-ball
 
 A voice-controlled Magic 8 Ball running entirely in the browser. No server, no API keys, no data leaving your device.
 
-![Magic 8 Ball screenshots](https://raw.githubusercontent.com/dskill/magic-8-ball/main/screenshot0.png)
+![Magic 8 Ball screenshots](/assets/images/devlog/magic-8-ball/screenshot0.png)
 
 Three models run locally via Transformers.js and WebGPU:
 - **Whisper-tiny.en** (~40MB) - speech-to-text
@@ -18,8 +18,8 @@ Qwen at 0.6B is fast but not smart. It can't reason or follow complex instructio
 
 Speak a question, Whisper transcribes it, Qwen generates an answer, TTS reads it back. Shader effects complete the aesthetic. Requires Chrome with WebGPU.
 
-![Magic 8 Ball interface](https://raw.githubusercontent.com/dskill/magic-8-ball/main/screenshot1.png)
+![Magic 8 Ball interface](/assets/images/devlog/magic-8-ball/screenshot1.png)
 
-![Magic 8 Ball response](https://raw.githubusercontent.com/dskill/magic-8-ball/main/screenshot2.png)
+![Magic 8 Ball response](/assets/images/devlog/magic-8-ball/screenshot2.png)
 
 - Source: [magic-8-ball on GitHub](https://github.com/dskill/magic-8-ball)
