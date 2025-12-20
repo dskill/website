@@ -3,7 +3,7 @@ title: "Magic 8 Ball"
 date: 2025-12-15
 source_slug: magic-8-ball
 source_link: /devlog/magic-8-ball
-thumbnail: /assets/images/devlog/magic-8-ball/screenshot1.png
+thumbnail: /assets/images/devlog/magic-8-ball/screenshot2.png
 ---
 
 A voice-controlled Magic 8 Ball running entirely in the browser. No server, no API keys, no data leaving your device.
