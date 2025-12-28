@@ -4,6 +4,7 @@ date: 2025-12-23
 source_slug: maze-face
 source_link: /devlog/maze-face
 thumbnail: /assets/images/devlog/maze-face/app-screenshot.png
+published: false
 ---
 
 TODO: 
