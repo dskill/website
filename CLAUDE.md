@@ -41,9 +41,9 @@ thumbnail_video: https://player.vimeo.com/video/12345  # Alternative: video thum
 - With Jekyll relative_url: `{{ '/assets/images/devlog/slug/image.png' | relative_url }}`
 
 # Gotchas
-- Git needs Ruby 3.1.4 active; avoid mixing with system Ruby (2.6) to prevent Bundler errors.  
-- GitHub Pages supports only whitelisted plugins; stick to `jekyll-feed`, `jekyll-seo-tag`, and other approved gems unless deploying via GitHub Actions.  
-- Maintain ASCII filenames; spaces in image names came from Squarespace—rename if automating pipelines later.  
+- Ruby 3.1.4 via rbenv is required. The shell may default to system Ruby 2.6, causing Bundler errors. Always prefix commands with `eval "$(rbenv init -)" &&` to ensure the correct version. Example: `eval "$(rbenv init -)" && bundle exec jekyll serve --livereload --baseurl ""`
+- GitHub Pages supports only whitelisted plugins; stick to `jekyll-feed`, `jekyll-seo-tag`, and other approved gems unless deploying via GitHub Actions.
+- Maintain ASCII filenames; spaces in image names came from Squarespace—rename if automating pipelines later.
 - Large GIFs may impact load time; consider MP4/WebM alternatives if performance becomes an issue.
 - Project site deploys at `/website`; Jekyll baseurl is set to `/website`, so run `bundle exec jekyll serve --livereload --baseurl ""` for root-local testing.
 - When recreating experience pages, capture all source media locally and keep the copy identical to the original page text (no paraphrasing).
