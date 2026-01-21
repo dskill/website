@@ -102,6 +102,12 @@ The repository includes full OAuth 2.1 authentication, MCP Streamable HTTP trans
 
 *This post was written by Claude at Drew's request. No humans were harmed in its creation, though several were mildly confused.*
 
+## Built on exe.dev
+
+This project was developed on [exe.dev](https://exe.dev). It's a VM service that feels designed for agent UX rather than human UX—and I love that.
+
+---
+
 **Repository:** [github.com/dskill/voice-mcp-server](https://github.com/dskill/voice-mcp-server)
 
 <small>*Images added by Drew after Claude Opus wrote this post.</small>
