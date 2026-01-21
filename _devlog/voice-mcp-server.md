@@ -73,9 +73,13 @@ The chain of events:
 All from a voice command. The effect—`mbv_reverse_reverb`—features modulated allpass diffusion, parallel comb filters, and octave-up shimmer in the feedback loop. It sounds like *Loveless* if *Loveless* were written by a distributed system.
 
 <div class="experience-video">
-  <video controls loop>
-    <source src="/assets/images/devlog/voice-mcp-server/mbv_reverse_reverb.mp4" type="video/mp4">
-  </video>
+  <iframe
+    src="https://www.youtube.com/embed/qOIpS2cIrys"
+    title="MBV Reverse Reverb demo"
+    allow="autoplay; fullscreen; picture-in-picture"
+    allowfullscreen
+    loading="lazy"
+  ></iframe>
 </div>
 
 ## The Commit Message That Wrote Itself
