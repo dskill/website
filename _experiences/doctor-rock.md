@@ -1,13 +1,21 @@
 ---
 title: "Doctor Rock"
 ---
-![]({{ '/assets/images/doctor-rock/IMG_8613.jpg' | relative_url }})
+![Doctor Rock device](/assets/images/doctor-rock/IMG_8613.jpg)
 
-# Overview
+# What It Is
 
-Doctor Rock is an experimental project that combines audio visual effects processing with real-time music visualization. It is a dev kit for exploring audiovisual affect generation, a real-time music visualizer capable of loading ShaderToy-style GLSL sketches, a local-network broadcast system for high-resolution displays, and a wrapper around SuperCollider for near-limitless (hardware-dependent) audio processing.
+Doctor Rock is an open-source audiovisual effects processor and guitar pedal dev kit. It runs on a Raspberry Pi with real-time audio processing through SuperCollider and ShaderToy-style GLSL visualizations—all controllable via voice, phone, or hardware faders.
 
-The app is cross platform but the current build runs on a Raspberry Pi 4B with a Pisound HAT running Patchbox OS. An integrated microphone provides natural-language agent control.
+Unlike traditional guitar pedals that offer a fixed set of knobs and effects, Doctor Rock treats effects as code: text files you can fork, remix, and share. With 100+ effects to start and LLM-powered creation tools, you're not limited to what ships in the box.
+
+**Key capabilities:**
+- Real-time audio effects processing with ~2.1ms latency
+- Synchronized audio-reactive visualizations
+- Natural language effect creation and editing via AI
+- Phone-based remote control with QR code pairing
+- Hardware fader integration (Roto Control Mini)
+- Git-based effect library with community sharing
 
 ## Demo Video
 
@@ -21,80 +29,173 @@ The app is cross platform but the current build runs on a Raspberry Pi 4B with a
   ></iframe>
 </div>
 
-## Origin and Iterations
+---
 
-The project started as a playful hardware experiment among friends, took several twists and turns, and then paused for a while. I could never quite let it go, so over the last several years I've been steadily iterating on new hardware and software approaches. Although it was conceived as a guitar pedal originally, it has evolved into more of a dev kit and audiovisual effects processor. One observation along the way is that guitar pedals haven't really changed in ages and would be far more capable with a high-quality built-in display. It's not quite fair to call it a guitar pedal even though that's the inspiration, because I never stuck a footswitch on it.
+# Core Features
 
-## Current Hardware Setup
+## Phone Control with QR Code Pairing
 
-For this iteration, Doctor Rock runs on a Raspberry Pi 4B paired with a [Pisound](https://blokas.io/pisound/) HAT that delivers ~2.1 ms loopback latency while providing balanced stereo in/out over 1/4" jacks, a solid preamp, and level control.  The rig boots into [Patchbox OS](https://blokas.io/patchbox-os/), whose real-time Linux kernel keeps audio processing in the low-single-digit millisecond range. The hardware stack accepts line-level instruments such as guitars, handles microphones cleanly, midi inputs (keyboards/faders/etc) includes an onboard mic for agent commands, and leaves room for external footswitch inputs if needed.
+When you're playing guitar, the last thing you want is to bend over and tap a touchscreen. Doctor Rock generates a QR code that beams the control interface to your phone. Once paired, your phone becomes a wireless effects controller—browse effects, adjust parameters, and shuffle presets while you play.
 
-## CAD Modeling
+The mobile interface stays synchronized with the device: what you see on your phone matches what's happening on the pedal, and vice versa.
 
-I modeled and designed the enclosure in Fusion 360, and laser cut it on my Glowforge.  There were probably about 20 different variations as I explored the best way to fit all the components, while keeping the project extensible (e.g. not blocking access to USB ports, sd card slots, etc).
+## Roto Control Mini Integration
+
+Doctor Rock connects to the [Roto Control Mini](https://www.palettegear.com/roto), a physical motorized knob. When you move a fader on your phone, the physical Roto knob rotates to match—and the on-device UI updates as well. All three interfaces (phone, touchscreen, hardware) stay in sync.
+
+This bidirectional binding means you can reach over and grab the physical knob mid-performance, or tap your phone, or use the touchscreen. The effect parameters follow wherever you control them from. In shuffle mode, when new effects load, the faders animate to their new positions across all connected interfaces.
+
+## 100+ Effects Library
+
+The [doctor-rock-effects](https://github.com/dskill/doctor-rock-effects) repository contains over 100 effects ready to use out of the box:
+
+- **Audio effects:** distortion, autowah, delay, reverb, harmonizers, pitch shifters, ring modulators, loopers, granular processors
+- **Visualizers:** audio-reactive shaders adapted from ShaderToy, waveform displays, FFT spectrograms, procedural animations
+- **Utilities:** bypass, tuner, input level monitoring
+
+Each effect is a SuperCollider `.sc` file (audio) or GLSL `.glsl` file (visual). Since they're just text, you can read the code, tweak parameters, or use them as starting points for your own creations.
+
+*Example directory structure:*
+```
+effects/
+├── audio/
+│   ├── autowah.sc
+│   ├── bypass.sc
+│   ├── baxandall_distortion.sc
+│   ├── mbv_reverse_reverb.sc
+│   └── ...
+├── shaders/
+│   ├── ascii.glsl
+│   ├── spectral.glsl
+│   ├── flames.glsl
+│   └── ...
+├── utilities/
+│   ├── init.sc
+└── agents.md
+```
+
+## Natural Language Effect Creation
+
+LLMs are surprisingly good at writing SuperCollider code. Doctor Rock integrates Claude as an AI copilot for creating and modifying effects through conversation:
+
+- **Voice commands:** Speak into the device's built-in mic to request changes
+- **MCP server integration:** The Doctor Rock MCP server exposes tools for effect compilation, parameter adjustment, and Git operations
+- **Iterative feedback:** The agent can check if code compiles, read error messages, and fix issues automatically
+
+The [voice-mcp-server](/devlog/voice-mcp-server/) project extends this further—you can control Doctor Rock from the Claude iOS app, creating effects via voice commands from your phone while the device runs on your local network.
+
+*Example: The `mbv_reverse_reverb` effect—a My Bloody Valentine-style reverse reverb—was created entirely through voice commands, from initial request to GitHub push.*
+
+---
+
+# Hardware
+
+## Current Build
+
+- **Compute:** Raspberry Pi 4B (4GB or 8GB recommended)
+- **Audio interface:** [Pisound HAT](https://blokas.io/pisound/) – balanced stereo I/O, solid preamp, ~2.1ms loopback latency
+- **OS:** [Patchbox OS](https://blokas.io/patchbox-os/) – real-time Linux kernel optimized for audio
+- **Display:** 7" touchscreen (the UI is optimized for this specific resolution)
+- **Mic:** Built-in microphone for voice commands
+- **I/O:** 1/4" guitar input, 1/4" stereo output, USB ports, MIDI support
+
+The hardware stack accepts line-level instruments (guitars, synths), handles microphones cleanly, and supports external footswitches if you want to add them.
+
+## Enclosure
+
+Designed in Fusion 360 and laser cut on a Glowforge. Went through ~20 iterations to balance component access (USB ports, SD card slot) with a clean look. The design is parametric and can be adapted for different component layouts.
+
 <div class="media-grid">
   <img src="{{ '/assets/images/doctor-rock/wireframe1.png' | relative_url }}" alt="Doctor Rock wireframe design 1">
   <img src="{{ '/assets/images/doctor-rock/wireframe2.png' | relative_url }}" alt="Doctor Rock wireframe design 2">
 </div>
 
-## Agentic Control and Natural Language Processing
+---
 
-LLMs are startlingly good at writing new SuperCollider effects with the right guardrails. A `Claude.md`/`agents.md` guide spells out how the system is structured, and the agent can check compilation status, get error feedback, and iterate automatically. Doctor Rock also integrates Claude Code as an AI copilot, making it possible to author or tweak effects entirely through conversational voice instructions.
+# Software Architecture
+
+## Stack
+
+- **Audio engine:** SuperCollider – handles all DSP, streams waveform data to visualizer via OSC
+- **Application layer:** Electron – cross-platform, enables macOS development with ARM builds for Pi
+- **Frontend:** React – responsive UI for effect browsing, parameter control, and settings
+- **Communication:** OSC for audio data, MCP for agent control, WebSocket for phone pairing
 
 ## Visualization Pipeline
 
-Doctor Rock's visuals are tightly bound to the audio layer. ShaderToy-like GLSL visualizers can be swapped in, tuned by the agent, and distributed across the local network so multiple high-resolution displays stay in sync with minimal overhead. Visual responses react in real time to the frequency and amplitude data that SuperCollider streams over.  
+Visuals are tightly coupled to audio. SuperCollider streams real-time frequency and amplitude data over OSC. ShaderToy-compatible GLSL shaders consume this data, creating audio-reactive visuals.
 
-Supercollider sends realtime waveform data to the visualizer via OSC.  The front end (and MCP servers) can control Supercollider via OSC as well.
+The visualizer can broadcast over the local network, so multiple high-resolution displays stay in sync with minimal overhead. Useful for projecting visuals while keeping the main unit at your feet.
 
-## MCP server and Git Workflows
+## MCP Server
 
-The device and app run an MCP server that lets the agent manage application state through natural language. That bridge is the key glue between the agent and the application, allowing the agent to create new effects, edit parameters, set defaults, capture logs, and generally keep the system in flow. Because AI agents make tools like Git incredibly intuitive, Doctor Rock leans on Git for effect management and community sharing. A public repository doubles as local storage for personal patches, while branches provide room for experimentation and structured contributions. Because the entire audio engine lives as SuperCollider code inside that repository, adding new capabilities stays straightforward. The MCP integration also means the agent can run Git commands for you, effectively giving the device one of the most powerful version-control workflows available for branching, sharing, and local storage.
+The device runs an MCP (Model Context Protocol) server that exposes its capabilities to AI agents:
 
-*Example effect repo directory structure:*
-```
-effects/
-├── audio/                        
-│   ├── autowah.sc
-│   ├── bypass.sc
-│   ├── baxandall_distortion.sc
-│   └── ...
-├── shaders/                       
-│   ├── ascii.glsl
-│   ├── spectral.glsl
-│   ├── flames.glsl
-│   └── ...
-├── utilities/                     
-│   ├── init.sc
-├── agents.md    
-```
+- Create, edit, and delete effects
+- Adjust parameters and save presets
+- Capture logs and compilation output
+- Run Git commands (commit, push, pull, branch)
+- Control playback and visualization
 
-## Software Stack and Deployment
+This makes natural language the interface layer—the agent translates conversational requests into tool calls that manipulate the system.
 
-After many permutations, the current stack combines a SuperCollider backend, an Electron application layer, and a React front end. That setup stays cross-platform: I build on macOS and can produce ARM builds for the Pi directly. On startup the application checks GitHub releases and pulls down updates when needed.
+## Updates and Offline Mode
 
-Playing with friends proved the rig has to perform well offline. When Wi-Fi is available you get the full AI-powered capabilities and access to the public effects repository, but without connectivity the device keeps working—just without cloud features.
+On startup, the app checks GitHub releases and pulls updates when available. But connectivity isn't required: the device works fully offline, minus cloud features like AI creation and effect sync. Important for gigging musicians who can't rely on venue Wi-Fi.
 
-## Turtles all the way down: AI's involvement in development
+---
 
-Doctor Rock has doubled as a sandbox for learning how to collaborate with ever-more-capable AI tools. Early builds leaned on GPT-3.5 for code review and rubber-ducking, but much of the heavy lifting still happened by hand. Each time the models advanced, another piece of the workflow became faster: debugging, shader authoring, documentation, and even new SuperCollider patches started flowing through conversational prompts. Today development is not vibe coded, but is very high level. The LLM shapes large portions of the stack while I focus on direction, integration, and the physical build. The emphasis has always been on proving out ideas quickly rather than polishing production-ready code, and that bias toward rapid experimentation keeps the project evolving alongside the tooling.
+# Why It Exists
 
-To be clear, I am not proud of the code written for this.  It is definitely "code as a means to an end". There is nothing remotely pretty about it, but I am proud of the overall structure.
+Guitar pedals haven't fundamentally changed in decades. They're hardware-defined: you get the effects the manufacturer built in, with the knobs they chose, at the price they set. Want a different effect? Buy another pedal.
 
-## Learnings and Limitations
-- The agent capabilities are still too slow for the creative flow state they are intended to unlock. 
-- Raspberry Pi boot time is slow (not optimized).
-- Setting up Git push support requires configuring credentials on-device. 
-- Enabling the agentic LLM features means setting up billing with the agent tool. 
-- I added in-app Wi-Fi provisioning, but connecting remains clumsy.
+Doctor Rock asks: what if effects were software? What if your pedal had a screen? What if you could describe the sound you want and have AI write the code?
 
-## Contributers and Attributions
+The original inspiration was simple: a guitar pedal with a display. But that idea evolved into something more experimental—a dev kit for exploring what audiovisual effect processing could become when you treat code as the medium and AI as a collaborator.
 
-Shoutout to Patrick Hackett and Brian Min for co-creating the initial prototype.  Maybe we'll regroup on a bigger production push someday.
-![]({{ '/assets/images/doctor-rock/screenshot-2025-04-24-21-40-14.png' | relative_url }})
+It's not a finished product. It's a sandbox.
+
+---
+
+# Weaknesses and Future Work
+
+## Current Limitations
+
+**Boot time is slow.** Raspberry Pi isn't known for fast starts. The current setup takes 30-45 seconds to reach the app from power-on. For a gigging musician, this is inconvenient. Future work: investigate boot optimization, consider a more responsive "loading" state, or explore alternative SBCs.
+
+**UI is designed for a specific display.** The touchscreen UI targets the 7" Raspberry Pi display at 800x480. While the app runs on macOS, the interface feels cramped or awkward on different resolutions. A more responsive design would help, but it hasn't been a priority given the focused use case.
+
+**LLM latency breaks creative flow.** The vision is that creating effects should feel like patching cables—immediate, tactile, iterative. In practice, LLM response times (5-15 seconds per turn) disrupt that flow state. You describe what you want, wait, see the result, describe a tweak, wait again. It works, but it doesn't feel like improvisation yet. As inference speeds improve, this will get better. For now, it's more "compose and wait" than "jam."
+
+**Setup requires configuration.** Git push support needs SSH key setup. AI features require API billing configuration. Wi-Fi provisioning exists but remains clumsy. The project isn't yet turnkey.
+
+**The code is rough.** This is "code as a means to an end"—functional but not pretty. It's been a learning project for AI-assisted development, with rapid iteration prioritized over polish. The architecture is sound, but the implementation has debt.
+
+## Future Directions
+
+- **Faster local inference:** Running smaller models on-device could reduce latency for simple edits
+- **Effect templates:** Starting from known-good patterns rather than blank SuperCollider files
+- **Footswitch support:** Physical momentary switches for live performance
+- **Community effect sharing:** A proper index/discovery mechanism for the effects repo
+- **Boot optimization:** Faster startup for practical gigging use
+- **Responsive UI:** Better support for different screen sizes
+
+---
+
+# Origin Story
+
+The project started as a playful hardware experiment with friends, took several twists and turns, and then paused. I couldn't let it go. Over several years, I've steadily iterated on hardware and software approaches.
+
+Although it was conceived as a guitar pedal, it evolved into more of a dev kit and audiovisual processor. One observation along the way: guitar pedals would be far more capable with a high-quality built-in display. But it's not quite fair to call this a guitar pedal either—I never stuck a footswitch on it.
+
+## Contributors and Attributions
+
+Shoutout to **Patrick Hackett** and **Brian Min** for co-creating the initial prototype. Maybe we'll regroup on a bigger production push someday.
+
+![Initial prototype](/assets/images/doctor-rock/screenshot-2025-04-24-21-40-14.png)
 *Initial prototype from 2022*
 
-Shoutout to Matthew Bice who inspired the 2nd iteration, where you actually talk to him and he talks back.
+Shoutout to **Matthew Bice** who inspired the 2nd iteration, where you actually talk to him and he talks back.
 
 <div class="media-grid">
   <img src="{{ '/assets/images/doctor-rock/IMG_1497.jpg' | relative_url }}" alt="Doctor Rock assembly">
@@ -102,17 +203,30 @@ Shoutout to Matthew Bice who inspired the 2nd iteration, where you actually talk
 </div>
 *2nd iteration from 2023*
 
-Since the app can use ShaderToy-style GLSL sketches, many of the visualizers are modified versions of the original ShaderToy sketches. For example:
+## Shader Credits
+
+Since the app uses ShaderToy-style GLSL sketches, many visualizers are modified versions of original ShaderToy works:
+
 - [Neon Love – alro](https://www.shadertoy.com/view/WdK3Dz)
 - [Oscilloscope – incription](https://www.shadertoy.com/view/slc3DX)
 - [Waves Remix – ADOB](https://www.shadertoy.com/view/4ljGD1)
 
-Whenever possible, I've tried to maintain the original author's license and credit them in the effects.
+I've tried to maintain original authors' licenses and credit them in the effect files.
 
-# Thanks!
-Wow you made it this far!  Thanks for reading.  This has been a really fun project and I'm sure its not over yet.  
+## AI in Development
 
-If you want to learn more about my work or get in touch, check out my [info here](/about).
+Doctor Rock has been a sandbox for learning AI-assisted development. Early builds used GPT-3.5 for code review. Each time models advanced, more of the workflow became faster: debugging, shader authoring, documentation, SuperCollider patches. Today development is high-level—I focus on direction, integration, and hardware while the LLM handles implementation detail.
 
-![]({{ '/assets/images/doctor-rock/IMG_9055.jpg' | relative_url }})
+---
 
+# Get Involved
+
+**Effects Repository:** [github.com/dskill/doctor-rock-effects](https://github.com/dskill/doctor-rock-effects)
+
+**Voice MCP Server:** [github.com/dskill/voice-mcp-server](https://github.com/dskill/voice-mcp-server) (for remote AI control)
+
+---
+
+Thanks for reading! This has been a fun project and it's not over yet. If you want to learn more about my work or get in touch, check out my [info here](/about).
+
+![Doctor Rock final](/assets/images/doctor-rock/IMG_9055.jpg)
