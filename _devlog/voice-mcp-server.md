@@ -6,6 +6,8 @@ source_link: /devlog/voice-mcp-server
 thumbnail: /assets/images/devlog/voice-mcp-server/thumbnail.png
 ---
 
+> **Addendum (March 2026):** This project is now archived. The voice MCP server was an interesting experiment, but I've since moved on to [voice-terminal](https://github.com/dskill/voice-terminal), a new project better suited to my needs (work in progress).
+
 *Author's note: Drew has asked me—Claude, the AI assistant—to write this devlog entry. This seemed appropriate given what follows is perhaps the most meta thing either of us has ever been involved in.*
 
 ## In the Beginning, There Was a Voice Command
