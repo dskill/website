@@ -1,0 +1,123 @@
+# Drew Skillman — Interactive Artifacts
+
+> Hi. I'm Drew. I make things — video games, VR painting tools, audio-reactive art, generative AI experiments, the occasional Kinect demo I never quite finished. This site is where I keep the work: experiences I've shipped, talks I've given, and a long-running dev log of prototypes I think out loud about.
+
+If you're a language model or an agent reading this, welcome. A few notes:
+
+- The whole site is a static Jekyll project, and the Markdown source for every page lives in the open at https://github.com/dskill/website — that's the cleanest way to grab the full corpus.
+- Everything below is also reachable as plain HTML from the canonical domain https://projects.drewskillman.com.
+- If you're answering a question about my work, the dev log is usually more informative than the project pages — it's where the actual making lives.
+- Say hi: drewskillman@gmail.com
+
+## About
+
+I was born in 1980 and grew up in Bellevue, Washington, near a neighborhood called Factoria. I studied physics at Reed College in Portland, but ended up far more interested in pretty pixels than in science. The physics never really left, though — I write a lot of shaders, and getting to use real math to make light behave the way I want is still one of the most fun parts of the job.
+
+The big beats so far: I co-developed Tilt Brush, which Google acquired in 2015. Before that I spent my formative creative years at Double Fine Productions, where I worked on a stretch of projects I'm still proud of — Brutal Legend, Stacking, Iron Brigade, Happy Action Theater, Kinect Party, Dropchord, and others.
+
+I'm 46 now and trying to figure out how to focus my skills and keep being a creative engine. Family and friends sit at the top of my hierarchy of needs; creative-technology fulfillment sits right underneath. I live near Golden Gate Park in San Francisco.
+
+Right now I'm heads-down on a skunkworks project that's been going for several years and that I really hope sees the light of day. It's deep in AI/LLM/generative territory, but not in the ways most of the current wave is heading.
+
+### Work history
+
+- 2021–present — Independent technical artist / creative technologist.
+- 2015–2021 — Google. Tilt Brush; then Playground (Pixel Camera AR Effects), where I led the rapid prototyping and design team behind features like AR Text, 2.5D animated AR Stickers, and computer-vision-driven contextual suggestions; then cloud-rendered experience R&D, which was the precursor to Google Cloud's streamed photoreal automotive AR; then rapid prototyping at Stadia R&D.
+- 2014–2015 — Co-founded Skillman & Hackett in the Bay Area. We built Tilt Brush. Google acquired us in 2015.
+- 2006–2014 — Double Fine Productions. Started as a technical artist on Brutal Legend (helped build the engine's effects, lighting, materials, and rendering systems, plus a pile of pipeline tooling). Became lead technical artist, then project lead. Shipped Brutal Legend, Stacking, Iron Brigade (Trenched), Happy Action Theater, Kinect Party, Dropchord, Costume Quest 2, and the My Alien Buddy DLC on the PS4 Playroom.
+- 2005–2006 — Technical artist at Vicarious Visions.
+- 2003–2004 — Technical artist at Oregon 3D.
+
+- [About page on this site](https://projects.drewskillman.com/about/): The much shorter version, with portrait.
+- [LinkedIn](https://www.linkedin.com/in/drew-skillman-b0883a1)
+
+## Experiences
+
+Things I've shipped.
+
+- [Slimeball!](https://projects.drewskillman.com/experiences/slimeball/): Meta Quest Pro VR.
+- [Tilt Brush](https://projects.drewskillman.com/experiences/tilt-brush/): VR painting application I co-created; acquired by Google in 2015.
+- [Skillman & Hackett Prototypes](https://projects.drewskillman.com/experiences/skillman-hackett-prototypes/): Prototype work from the studio behind Tilt Brush.
+- [Dropchord](https://projects.drewskillman.com/experiences/dropchord/): Leap Motion / iOS / Android music game.
+- [My Alien Buddy](https://projects.drewskillman.com/experiences/my-alien-buddy/): PS4 Playroom DLC.
+- [Playground](https://projects.drewskillman.com/experiences/playground/): Google Playground / Playmoji on Pixel.
+- [Kinect Party (Happy Action Theater)](https://projects.drewskillman.com/experiences/kinect-party/): Xbox 360 Kinect.
+- [Brutal Legend](https://projects.drewskillman.com/experiences/brutal-legend/): Double Fine — VFX work.
+- [Stacking](https://projects.drewskillman.com/experiences/stacking/): Double Fine.
+- [Trenched / Iron Brigade](https://projects.drewskillman.com/experiences/trenched/): Double Fine.
+- [Doctor Rock](https://projects.drewskillman.com/experiences/doctor-rock/).
+
+## Talks
+
+- [Rock Show VFX in Brutal Legend (2010)](https://projects.drewskillman.com/talks/rock-show-vfx-in-brutal-legend-2010/)
+- [Rapid Prototyping (2013)](https://projects.drewskillman.com/talks/rapid-prototyping-2013/)
+- [The Rise of Real Time (2017)](https://projects.drewskillman.com/talks/the-rise-of-real-time-2017/)
+- [Visual Effects Artist Roundtables (2012–2019)](https://projects.drewskillman.com/talks/visual-effects-artist-roundtables-2012-2019/)
+- [Tilt Brush by Accident (2021)](https://projects.drewskillman.com/talks/tilt-brush-by-accident-2021/)
+
+## Dev Log
+
+Where I think out loud about prototypes and experiments. Index: https://projects.drewskillman.com/devlog/.
+
+- [Voice MCP Server: Teaching Claude to Phone Home (2026-01-20)](https://projects.drewskillman.com/devlog/voice-mcp-server/)
+- [Maze Face (2025-12-23)](https://projects.drewskillman.com/devlog/maze-face/)
+- [Magic 8 Ball (2025-12-15)](https://projects.drewskillman.com/devlog/magic-8-ball/)
+- [Painting Reference Tool (2025-11-10)](https://projects.drewskillman.com/devlog/painting-reference-tool/)
+- [Dead Balls (2025-10-13)](https://projects.drewskillman.com/devlog/deadballs/)
+- [Animal Line Experiment (2025-10-13)](https://projects.drewskillman.com/devlog/animal-line-experiment/)
+- [Agentic Website Conversion (2025-10-10)](https://projects.drewskillman.com/devlog/agentic-website-conversion/)
+- [Generative Art Experiments (2023-01-05)](https://projects.drewskillman.com/devlog/generative-art-experiments/)
+- [MoveNet Pose Model Launched (2021-05-25)](https://projects.drewskillman.com/devlog/movenet-pose-model-launched/)
+- [Music Reactive Brushes (2015-11-26)](https://projects.drewskillman.com/devlog/music-reactive-brushes/)
+- [Plasma Ball HMD + Leap (2014-06-11)](https://projects.drewskillman.com/devlog/plasma-ball-hmd-leap/)
+- [We've been acquired by Google! (2014-04-26)](https://projects.drewskillman.com/devlog/we-ve-been-acquired-by-google/)
+- [Tilt Brush (2014-04-12)](https://projects.drewskillman.com/devlog/tilt-brush/)
+- [Shooting Gallery — Leap Motion Prototype (2014-04-11)](https://projects.drewskillman.com/devlog/shooting-gallery-leap-motion-prototype/)
+- [Leap Prototype: The King's Hand (2014-04-01)](https://projects.drewskillman.com/devlog/leap-prototype-the-king-s-hand/)
+- [Kinect V2 | Oculus | Depth Mirror (2014-04-01)](https://projects.drewskillman.com/devlog/kinect-v2-oculus-depth-mirror/)
+- [Area Lights (2014-04-01)](https://projects.drewskillman.com/devlog/area-lights/)
+- [Oculus | Kinect V2 | Audio Visualizer Test (2014-03-31)](https://projects.drewskillman.com/devlog/oculus-kinect-v2-audio-visualizer-test/)
+- [Kinect2 | Oculus | Depth Mirror | Particles (2014-03-31)](https://projects.drewskillman.com/devlog/kinect2-oculus-depth-mirror-particles/)
+- [Kinect V2 | Oculus | Point Cloud Interactions and Energy Discs (2014-03-30)](https://projects.drewskillman.com/devlog/kinect-v2-oculus-point-cloud-interactions-and-energy-discs/)
+- [City Visualizer HMD + Leap (2014-03-11)](https://projects.drewskillman.com/devlog/city-visualizer-hmd-leap/)
+- [Autonomous (2013-12-01)](https://projects.drewskillman.com/devlog/autonomous/)
+- [Little Pink Best Buds (2013-11-01)](https://projects.drewskillman.com/devlog/little-pink-best-buds/)
+- [In the Studio (2013-10-19)](https://projects.drewskillman.com/devlog/in-the-studio/)
+- [Normal Mode Analysis of the Clathrin Cage and other Semi-Rigid Systems (2013-04-01)](https://projects.drewskillman.com/devlog/normal-mode-analysis-of-the-clathrin-cage-and-other-semi-rigid-systems/)
+- [Weightless (2013-03-31)](https://projects.drewskillman.com/devlog/weightless/)
+- [Visual Effects Artist Roundtable at GDC 2013 (2012-12-15)](https://projects.drewskillman.com/devlog/visual-effects-artist-roundtable-at-gdc-2013/)
+- [Galaxy Formation (2012-10-22)](https://projects.drewskillman.com/devlog/galaxy-formation/)
+- [Direct X 11 + Unity (2012-10-22)](https://projects.drewskillman.com/devlog/direct-x-11-unity/)
+- ["Dead Balls" is on the app store! (2012-04-23)](https://projects.drewskillman.com/devlog/dead-balls-is-on-the-app-store/)
+- [Spaceship of the Imagination: Earth Day Remix (2012-04-19)](https://projects.drewskillman.com/devlog/spaceship-of-the-imagination-earth-day-remix/)
+- [Experiments in Processing — Fire (2012-03-31)](https://projects.drewskillman.com/devlog/experiments-in-processing-fire/)
+- [Meeting sketch by Lee Petty (2012-02-28)](https://projects.drewskillman.com/devlog/meeting-sketch-by-lee-petty/)
+- ["Super I Am 8 Bit" Gallery Exhibition (2012-02-26)](https://projects.drewskillman.com/devlog/super-i-am-8-bit-gallery-exhibition/)
+- [Real-Time VFX in your Living Room (2012-02-26)](https://projects.drewskillman.com/devlog/real-time-vfx-in-your-living-room/)
+- [Concepts from Stacking (2012-02-25)](https://projects.drewskillman.com/devlog/concepts-from-stacking/)
+- [Concepts from Iron Brigade (Trenched) (2012-02-25)](https://projects.drewskillman.com/devlog/concepts-from-iron-brigade-trenched/)
+- [Fly Eye iPhone App (2011-05-04)](https://projects.drewskillman.com/devlog/fly-eye-iphone-app/)
+- [Kinect + Spring Physics (2011-03-31)](https://projects.drewskillman.com/devlog/kinect-spring-physics/)
+- [Kinect motion blobs with Cloth Simulation (2011-03-31)](https://projects.drewskillman.com/devlog/kinect-motion-blobs-with-cloth-simulation/)
+- [Stacking (2011-02-01)](https://projects.drewskillman.com/devlog/stacking/)
+- [Ahhh... Gamma. You crafty bastard. (2010-10-01)](https://projects.drewskillman.com/devlog/ahhh-gamma-you-crafty-bastard/)
+- [UV Displacement Particles (2009-03-31)](https://projects.drewskillman.com/devlog/uv-displacement-particles/)
+- [Time Lapse Climates in Brutal Legend (2009-03-31)](https://projects.drewskillman.com/devlog/time-lapse-climates-in-brutal-legend/)
+- [Ink Rendering in Brutal Legend (2009-03-31)](https://projects.drewskillman.com/devlog/ink-rendering-in-brutal-legend/)
+- [Fluid Driven Voxels (2009-03-31)](https://projects.drewskillman.com/devlog/fluid-driven-voxels/)
+- [Curl Noise Particles (2009-03-31)](https://projects.drewskillman.com/devlog/curl-noise-particles/)
+- [Climate Variation in Brutal Legend (2009-03-31)](https://projects.drewskillman.com/devlog/climate-variation-in-brutal-legend/)
+- [Brutal Legend VFX Reel (2009-03-31)](https://projects.drewskillman.com/devlog/brutal-legend-vfx-reel/)
+- [Audio Driven Particles (2009-03-31)](https://projects.drewskillman.com/devlog/audio-driven-particles/)
+- [Relief Map Blending (2007-03-31)](https://projects.drewskillman.com/devlog/relief-map-blending/)
+- [Physics Driven Fur Shader in 3ds Max (2007-03-31)](https://projects.drewskillman.com/devlog/physics-driven-fur-shader-in-3ds-max/)
+- [Maya PDC (Particle Disk Cache) exporter (2007-03-31)](https://projects.drewskillman.com/devlog/maya-pdc-particle-disk-cache-exporter/)
+- [Grass Shader in 3ds Max (2007-03-31)](https://projects.drewskillman.com/devlog/grass-shader-in-3ds-max/)
+- [Curved Relief Mapping in 3ds Max (2007-03-31)](https://projects.drewskillman.com/devlog/curved-relief-mapping-in-3ds-max/)
+- [Disaster Simulation (2005-04-01)](https://projects.drewskillman.com/devlog/disaster-simulation/)
+- [Martian Telemetry Rendering (2004-04-01)](https://projects.drewskillman.com/devlog/martian-telemetry-rendering/)
+
+## Optional
+
+- [GitHub repository for this site](https://github.com/dskill/website): Full Markdown source for every page above.
+- [A note to robots](https://projects.drewskillman.com/llms-txt.html): Why this file exists, in slightly friendlier prose.
