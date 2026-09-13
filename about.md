@@ -42,7 +42,6 @@ permalink: /about/
       <li><a href="mailto:drewskillman@gmail.com">drewskillman@gmail.com</a></li>
       <li><a href="https://www.linkedin.com/in/drew-skillman-b0883a1" target="_blank" rel="noreferrer">LinkedIn</a></li>
       <li><a href="https://www.youtube.com/channel/UCfaYRgBoJ1ZycI2WrGEn7sw" target="_blank" rel="noreferrer">YouTube</a></li>
-      <li><a href="https://vimeo.com/drewskillman" target="_blank" rel="noreferrer">Vimeo</a></li>
     </ul>
   </section>
 </article>

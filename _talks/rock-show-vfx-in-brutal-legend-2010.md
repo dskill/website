@@ -10,7 +10,7 @@ A VFX presentation shown at GDC 2010 [Brutal Legend VFX Presentation from GDC 20
 
 <div class="experience-video">
   <iframe
-    src="https://player.vimeo.com/video/8733431?wmode=opaque&api=1"
+    src="https://www.youtube.com/embed/XkvykLMr9eI"
     title="Brutal Legend Time Lapse Climate Video"
     allow="autoplay; fullscreen; picture-in-picture"
     allowfullscreen

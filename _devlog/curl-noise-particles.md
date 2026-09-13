@@ -9,7 +9,7 @@ An example of particles being influenced by **curl noise**. See the [Brutal Lege
 
 <div class="experience-video">
   <iframe
-    src="https://player.vimeo.com/video/10082799"
+    src="https://www.youtube.com/embed/WsFifumIqd8"
     title="Curl Noise"
     allow="autoplay; fullscreen; picture-in-picture"
     allowfullscreen

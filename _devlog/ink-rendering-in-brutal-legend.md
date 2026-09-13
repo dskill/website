@@ -10,7 +10,7 @@ This video shows the ink rendering technology I developed for Brutal Legend with
 
 <div class="experience-video">
   <iframe
-    src="https://player.vimeo.com/video/8733874?wmode=opaque&api=1"
+    src="https://www.youtube.com/embed/O3XPUfXPZ8U"
     title="Ink Particles and Rendering in Brutal Legend"
     allow="autoplay; fullscreen; picture-in-picture"
     allowfullscreen
@@ -20,7 +20,7 @@ This video shows the ink rendering technology I developed for Brutal Legend with
 
 <div class="experience-video">
   <iframe
-    src="https://player.vimeo.com/video/10082765?wmode=opaque&api=1"
+    src="https://www.youtube.com/embed/muOY142769s"
     title="An example of "
     allow="autoplay; fullscreen; picture-in-picture"
     allowfullscreen

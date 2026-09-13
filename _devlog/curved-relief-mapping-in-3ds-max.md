@@ -3,7 +3,7 @@ title: Curved Relief Mapping in 3ds Max
 date: 2007-03-31
 source_slug: curved-relief-mapping-in-3ds-max
 source_link: /devlog/curved-relief-mapping-in-3ds-max
-thumbnail_video: https://player.vimeo.com/video/8664887?wmode=opaque&api=1
+thumbnail_video: https://www.youtube.com/embed/tjr4pybHY0g
 ---
 
 This implementation of Fabio Policarpo's Curved Relief Mapping uses a modified version of the CG shader he developed. Like standard relief mapping, but uses a per vertex quadric curvature approximation to "wrap" the height map along the object's profile. This per vertex curvature approximation is calculated via maxscript in a preprocessing step.
@@ -16,7 +16,7 @@ This script that makes this possible computes the quadric curvature of an editab
 
 <div class="experience-video">
   <iframe
-    src="https://player.vimeo.com/video/8664887?wmode=opaque&api=1"
+    src="https://www.youtube.com/embed/tjr4pybHY0g"
     title="HLSL Curved Relief Mapping in 3ds Max"
     allow="autoplay; fullscreen; picture-in-picture"
     allowfullscreen

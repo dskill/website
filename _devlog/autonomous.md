@@ -12,7 +12,7 @@ thumbnail: /assets/images/devlog/autonomous/card-background.jpg
 
 <div class="experience-video">
   <iframe
-    src="https://player.vimeo.com/video/90606160?wmode=opaque&api=1"
+    src="https://www.youtube.com/embed/poZq4ztYAjE"
     title="Autonomous Trailer (Leap Edition)"
     allow="autoplay; fullscreen; picture-in-picture"
     allowfullscreen

@@ -3,12 +3,12 @@ title: Kinect2 | Oculus | Depth Mirror | Particles
 date: 2014-03-31
 source_slug: kinect2-oculus-depth-mirror-particles
 source_link: /devlog/kinect2-oculus-depth-mirror-particles
-thumbnail_video: https://player.vimeo.com/video/90438566?wmode=opaque&api=1
+thumbnail_video: https://www.youtube.com/embed/ppERZzsxeIE
 ---
 
 <div class="experience-video">
   <iframe
-    src="https://player.vimeo.com/video/90438566?wmode=opaque&api=1"
+    src="https://www.youtube.com/embed/ppERZzsxeIE"
     title="Kinect2 | Oculus | Depth Mirror | Particles"
     allow="autoplay; fullscreen; picture-in-picture"
     allowfullscreen

@@ -7,7 +7,7 @@ Happy Action Theater (AKA Kinect Party) is a playful computer vision experience 
 
 <div class="experience-video">
   <iframe
-    src="https://player.vimeo.com/video/90604984?wmode=opaque&api=1"
+    src="https://www.youtube.com/embed/I6Tt6ARAaQs"
     title="Kinect Party Trailer"
     allow="autoplay; fullscreen; picture-in-picture"
     allowfullscreen

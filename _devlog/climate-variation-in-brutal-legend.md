@@ -10,7 +10,7 @@ This video showcases the climate variation in Brutal Legend. The first half of t
 
 <div class="experience-video">
   <iframe
-    src="https://player.vimeo.com/video/10082861?wmode=opaque&api=1"
+    src="https://www.youtube.com/embed/A0WG6Ph-6Eg"
     title="Climate Variation in Brutal Legend"
     allow="autoplay; fullscreen; picture-in-picture"
     allowfullscreen

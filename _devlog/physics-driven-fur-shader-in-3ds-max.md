@@ -3,14 +3,14 @@ title: Physics Driven Fur Shader in 3ds Max
 date: 2007-03-31
 source_slug: physics-driven-fur-shader-in-3ds-max
 source_link: /devlog/physics-driven-fur-shader-in-3ds-max
-thumbnail_video: https://player.vimeo.com/video/8664922?wmode=opaque&api=1
+thumbnail_video: https://www.youtube.com/embed/03-6Ok93S80
 ---
 
 HLSL implementation of hair/grass using the "concentric spheres" technique. This version expects a per vertex force component to be passed into the shader via vertex data channels. In a separate max script, I calculate per vertex velocity, acceleration, and a compression factor which each have their own contribution weighting. The results of the calculation are baked into the vertex data channels per frame.
 
 <div class="experience-video">
   <iframe
-    src="https://player.vimeo.com/video/8664922?wmode=opaque&api=1"
+    src="https://www.youtube.com/embed/03-6Ok93S80"
     title="HLSL Physical Fur Shader Simulation in 3ds Max"
     allow="autoplay; fullscreen; picture-in-picture"
     allowfullscreen
@@ -20,7 +20,7 @@ HLSL implementation of hair/grass using the "concentric spheres" technique. This
 
 <div class="experience-video">
   <iframe
-    src="https://player.vimeo.com/video/8664902?wmode=opaque&api=1"
+    src="https://www.youtube.com/embed/HhjcRfKtCOQ"
     title="HLSL Physical Fur Shader Simulation in 3ds Max 2"
     allow="autoplay; fullscreen; picture-in-picture"
     allowfullscreen

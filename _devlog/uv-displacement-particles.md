@@ -10,7 +10,7 @@ UV Displacement, aka UV Distortion, aka Pixel Offset, etc..., is a fantastically
 
 <div class="experience-video">
   <iframe
-    src="https://player.vimeo.com/video/10082746?wmode=opaque&api=1"
+    src="https://www.youtube.com/embed/6iTWuvB28z4"
     title="UV Displacement Comparison"
     allow="autoplay; fullscreen; picture-in-picture"
     allowfullscreen

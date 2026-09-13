@@ -10,7 +10,7 @@ thumbnail: /assets/images/devlog/little-pink-best-buds/little-pink-best-buds-thu
 
 <div class="experience-video">
   <iframe
-    src="https://player.vimeo.com/video/90605770?wmode=opaque&api=1"
+    src="https://www.youtube.com/embed/-sy_Hs_PtPg"
     title="Little Pink Best Buds: Busted AI Chillout"
     allow="autoplay; fullscreen; picture-in-picture"
     allowfullscreen
